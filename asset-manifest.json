@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/birdwatch-fingal/static/css/main.8c8b27cf.chunk.css",
-    "main.js": "/birdwatch-fingal/static/js/main.41a9b6c5.chunk.js",
-    "main.js.map": "/birdwatch-fingal/static/js/main.41a9b6c5.chunk.js.map",
-    "runtime-main.js": "/birdwatch-fingal/static/js/runtime-main.0e856946.js",
-    "runtime-main.js.map": "/birdwatch-fingal/static/js/runtime-main.0e856946.js.map",
-    "static/js/2.6d6aa48b.chunk.js": "/birdwatch-fingal/static/js/2.6d6aa48b.chunk.js",
-    "static/js/2.6d6aa48b.chunk.js.map": "/birdwatch-fingal/static/js/2.6d6aa48b.chunk.js.map",
-    "static/js/3.590254f0.chunk.js": "/birdwatch-fingal/static/js/3.590254f0.chunk.js",
-    "static/js/3.590254f0.chunk.js.map": "/birdwatch-fingal/static/js/3.590254f0.chunk.js.map",
+    "main.css": "/birdwatch-fingal/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/birdwatch-fingal/static/js/main.c155b51b.chunk.js",
+    "main.js.map": "/birdwatch-fingal/static/js/main.c155b51b.chunk.js.map",
+    "runtime-main.js": "/birdwatch-fingal/static/js/runtime-main.fb39f83c.js",
+    "runtime-main.js.map": "/birdwatch-fingal/static/js/runtime-main.fb39f83c.js.map",
+    "static/css/2.43b2b750.chunk.css": "/birdwatch-fingal/static/css/2.43b2b750.chunk.css",
+    "static/js/2.1c159513.chunk.js": "/birdwatch-fingal/static/js/2.1c159513.chunk.js",
+    "static/js/2.1c159513.chunk.js.map": "/birdwatch-fingal/static/js/2.1c159513.chunk.js.map",
+    "static/js/3.6fcfc4ae.chunk.js": "/birdwatch-fingal/static/js/3.6fcfc4ae.chunk.js",
+    "static/js/3.6fcfc4ae.chunk.js.map": "/birdwatch-fingal/static/js/3.6fcfc4ae.chunk.js.map",
     "index.html": "/birdwatch-fingal/index.html",
-    "static/css/main.8c8b27cf.chunk.css.map": "/birdwatch-fingal/static/css/main.8c8b27cf.chunk.css.map",
-    "static/js/2.6d6aa48b.chunk.js.LICENSE.txt": "/birdwatch-fingal/static/js/2.6d6aa48b.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/birdwatch-fingal/static/media/logo.6ce24c58.svg"
+    "static/css/2.43b2b750.chunk.css.map": "/birdwatch-fingal/static/css/2.43b2b750.chunk.css.map",
+    "static/css/main.6dea0f05.chunk.css.map": "/birdwatch-fingal/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.1c159513.chunk.js.LICENSE.txt": "/birdwatch-fingal/static/js/2.1c159513.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.0e856946.js",
-    "static/js/2.6d6aa48b.chunk.js",
-    "static/css/main.8c8b27cf.chunk.css",
-    "static/js/main.41a9b6c5.chunk.js"
+    "static/js/runtime-main.fb39f83c.js",
+    "static/css/2.43b2b750.chunk.css",
+    "static/js/2.1c159513.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.c155b51b.chunk.js"
   ]
 }
