@@ -5,6 +5,7 @@ import {
   Card,
   CardColumns,
   CardDeck,
+  Container,
   Jumbotron,
 } from "react-bootstrap";
 import { Timeline } from "react-twitter-widgets";
@@ -16,45 +17,46 @@ import "./css/home.css";
 export default function Home() {
   return (
     <div>
-      <Jumbotron className="jumbo my-4" />
+      <Jumbotron className="jumbo" />
+      <Container>
+        <Alert className="my-4" variant="danger">
+          <p>
+            <b>21/10/2020</b>
+          </p>
+          <p>The hide in Turvey park Rogerstown is CLOSED until December.</p>
+          <p>
+            If you are planning to visit please check
+            http://bwifingal.ie/rogerstown-hides/ to see if a warden has been
+            assigned for that date. We rely on volunteers and it is not always
+            possible to cover every Saturday and Sunday between September and
+            March.
+          </p>
+          <p>
+            {" "}
+            All talks and outings are postponed until further notice. This step
+            has been taken to help to ensure the safety of our visitors and our
+            volunteers.
+          </p>
+        </Alert>
 
-      <Alert className="my-4" variant="danger">
-        <p>
-          <b>21/10/2020</b>
-        </p>
-        <p>The hide in Turvey park Rogerstown is CLOSED until December.</p>
-        <p>
-          If you are planning to visit please check
-          http://bwifingal.ie/rogerstown-hides/ to see if a warden has been
-          assigned for that date. We rely on volunteers and it is not always
-          possible to cover every Saturday and Sunday between September and
-          March.
-        </p>
-        <p>
-          {" "}
-          All talks and outings are postponed until further notice. This step
-          has been taken to help to ensure the safety of our visitors and our
-          volunteers.
-        </p>
-      </Alert>
+        {/* Main Content */}
+        <CardColumns>
+          <Welcome />
+          <BecomeMember />
+          <WetlandsExperiment />
+          <TwitterFeed />
+        </CardColumns>
 
-      {/* Main Content */}
-      <CardColumns>
-        <Welcome />
-        <BecomeMember />
-        <WetlandsExperiment />
-        <TwitterFeed />
-      </CardColumns>
-
-      {/* Bottom Content (Max 3 cards) */}
-      <Card className="my-4" bg="dark" text="light">
-        <Card.Header>Latest Updates:</Card.Header>
-        <CardDeck className="p-4">
-          <CardOne />
-          <CardTwo />
-          <CardThree />
-        </CardDeck>
-      </Card>
+        {/* Bottom Content (Max 3 cards) */}
+        <Card className="my-4" bg="dark" text="light">
+          <Card.Header>Latest Updates:</Card.Header>
+          <CardDeck className="p-4">
+            <CardOne />
+            <CardTwo />
+            <CardThree />
+          </CardDeck>
+        </Card>
+      </Container>
     </div>
   );
 }

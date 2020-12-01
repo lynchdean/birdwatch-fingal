@@ -27,16 +27,14 @@ export default function App() {
         </Nav>
       </Navbar>
 
-      <Container>
-        <Switch>
-          <Route path="/about">
-            <About />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-      </Container>
+      <Switch>
+        <Route path="/about">
+          <About />
+        </Route>
+        <Route path="/">
+          <Home />
+        </Route>
+      </Switch>
 
       <nav className="navbar sticky-bottom navbar-dark bg-dark text-light">
         <div className="navbar-text mx-auto">
