@@ -37,6 +37,12 @@ export default function App() {
           </Route>
         </Switch>
       </Container>
+
+      <nav className="navbar sticky-bottom navbar-dark bg-dark text-light">
+        <div className="navbar-text mx-auto">
+          <small>© 2020. Bird Watch Ireland. All Rights Reserved.</small>
+        </div>
+      </nav>
     </Router>
   );
 }

@@ -1,5 +1,12 @@
 import React from "react";
-import { Alert, Button, Card, CardColumns, Jumbotron } from "react-bootstrap";
+import {
+  Alert,
+  Button,
+  Card,
+  CardColumns,
+  CardDeck,
+  Jumbotron,
+} from "react-bootstrap";
 import { Timeline } from "react-twitter-widgets";
 import FingalLocation from "../assets/fingal-location.png";
 import Rogerstown from "../assets/rogerstown.jpg";
@@ -9,9 +16,9 @@ import "./css/home.css";
 export default function Home() {
   return (
     <div>
-      <Jumbotron className="jumbo mt-4">{/* <h1>BWI Fingal</h1> */}</Jumbotron>
+      <Jumbotron className="jumbo my-4" />
 
-      <Alert variant="danger">
+      <Alert className="my-4" variant="danger">
         <p>
           <b>21/10/2020</b>
         </p>
@@ -40,9 +47,14 @@ export default function Home() {
       </CardColumns>
 
       {/* Bottom Content (Max 3 cards) */}
-      {/* <CardDeck>
-
-      </CardDeck> */}
+      <Card className="my-4" bg="dark" text="light">
+        <Card.Header>Latest Updates:</Card.Header>
+        <CardDeck className="p-4">
+          <CardOne />
+          <CardTwo />
+          <CardThree />
+        </CardDeck>
+      </Card>
     </div>
   );
 }
@@ -166,6 +178,49 @@ function TwitterFeed() {
           }}
         />
       </Card.Body>
+    </Card>
+  );
+}
+
+function CardOne() {
+  return (
+    <Card bg="light" text="dark">
+      <Card.Header>
+        Canada’s Wildlife: An illustrated talk by Eamon & Christine O’Daly
+      </Card.Header>
+      <Card.Body className="p-0">
+        <Card.Img variant="top" src={Rogerstown} />
+      </Card.Body>
+      <Card.Footer>Thursday 6th Feb, Blue Bar, Skerries, 8pm 2020</Card.Footer>
+    </Card>
+  );
+}
+
+function CardTwo() {
+  return (
+    <Card bg="light" text="dark">
+      <Card.Header>What to do if you find a baby or injured bird.</Card.Header>
+      <Card.Body className="p-0">
+        <Card.Img variant="top" src={Rogerstown} />
+      </Card.Body>
+      <Card.Footer>Outing to Dundalk Bay</Card.Footer>
+    </Card>
+  );
+}
+
+function CardThree() {
+  return (
+    <Card bg="light" text="dark">
+      <Card.Header>
+        Canada’s Wildlife: An illustrated talk by Eamon & Christine O’Daly
+      </Card.Header>
+      <Card.Body className="p-0">
+        <Card.Img variant="top" src={Rogerstown} />
+      </Card.Body>
+      <Card.Footer>
+        Saturday 23rd February, 2020 Meet at The Spirit Store, Dundalk Docks @
+        10:15.
+      </Card.Footer>
     </Card>
   );
 }
