@@ -1,29 +1,30 @@
 {
   "files": {
-    "main.css": "/birdwatch-fingal/static/css/main.7b0d8c05.chunk.css",
-    "main.js": "/birdwatch-fingal/static/js/main.362e27fb.chunk.js",
-    "main.js.map": "/birdwatch-fingal/static/js/main.362e27fb.chunk.js.map",
+    "main.css": "/birdwatch-fingal/static/css/main.4dc657bc.chunk.css",
+    "main.js": "/birdwatch-fingal/static/js/main.f881cde3.chunk.js",
+    "main.js.map": "/birdwatch-fingal/static/js/main.f881cde3.chunk.js.map",
     "runtime-main.js": "/birdwatch-fingal/static/js/runtime-main.27f6fb75.js",
     "runtime-main.js.map": "/birdwatch-fingal/static/js/runtime-main.27f6fb75.js.map",
     "static/css/2.43b2b750.chunk.css": "/birdwatch-fingal/static/css/2.43b2b750.chunk.css",
-    "static/js/2.c9312303.chunk.js": "/birdwatch-fingal/static/js/2.c9312303.chunk.js",
-    "static/js/2.c9312303.chunk.js.map": "/birdwatch-fingal/static/js/2.c9312303.chunk.js.map",
+    "static/js/2.7923a9d8.chunk.js": "/birdwatch-fingal/static/js/2.7923a9d8.chunk.js",
+    "static/js/2.7923a9d8.chunk.js.map": "/birdwatch-fingal/static/js/2.7923a9d8.chunk.js.map",
     "static/js/3.97151617.chunk.js": "/birdwatch-fingal/static/js/3.97151617.chunk.js",
     "static/js/3.97151617.chunk.js.map": "/birdwatch-fingal/static/js/3.97151617.chunk.js.map",
     "index.html": "/birdwatch-fingal/index.html",
     "static/css/2.43b2b750.chunk.css.map": "/birdwatch-fingal/static/css/2.43b2b750.chunk.css.map",
-    "static/css/main.7b0d8c05.chunk.css.map": "/birdwatch-fingal/static/css/main.7b0d8c05.chunk.css.map",
-    "static/js/2.c9312303.chunk.js.LICENSE.txt": "/birdwatch-fingal/static/js/2.c9312303.chunk.js.LICENSE.txt",
+    "static/css/main.4dc657bc.chunk.css.map": "/birdwatch-fingal/static/css/main.4dc657bc.chunk.css.map",
+    "static/js/2.7923a9d8.chunk.js.LICENSE.txt": "/birdwatch-fingal/static/js/2.7923a9d8.chunk.js.LICENSE.txt",
     "static/media/brand.80f35c64.png": "/birdwatch-fingal/static/media/brand.80f35c64.png",
-    "static/media/home.css": "/birdwatch-fingal/static/media/rogerstown.75065683.jpg",
+    "static/media/home.css": "/birdwatch-fingal/static/media/image_45.60a2145a.jpg",
     "static/media/fingal-location.cae02ec0.png": "/birdwatch-fingal/static/media/fingal-location.cae02ec0.png",
-    "static/media/member-logo.1ea7a18e.png": "/birdwatch-fingal/static/media/member-logo.1ea7a18e.png"
+    "static/media/member-logo.1ea7a18e.png": "/birdwatch-fingal/static/media/member-logo.1ea7a18e.png",
+    "static/media/rogerstown.75065683.jpg": "/birdwatch-fingal/static/media/rogerstown.75065683.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.27f6fb75.js",
     "static/css/2.43b2b750.chunk.css",
-    "static/js/2.c9312303.chunk.js",
-    "static/css/main.7b0d8c05.chunk.css",
-    "static/js/main.362e27fb.chunk.js"
+    "static/js/2.7923a9d8.chunk.js",
+    "static/css/main.4dc657bc.chunk.css",
+    "static/js/main.f881cde3.chunk.js"
   ]
 }
