@@ -1,0 +1,14 @@
+.jumbo {
+  height: 400px;
+  background-image: url("../../assets/bwi-logo-t-w.png"),
+    url("../../assets/rogerstown.jpg");
+  background-attachment: scroll, fixed;
+  background-position: center center, center center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto 250px, cover;
+  /* background-color: white !important; */
+}
+
+.white-bg {
+  background-color: #fff;
+}
