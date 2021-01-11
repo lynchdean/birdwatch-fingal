@@ -24,27 +24,36 @@ function About() {
         </Card.Header>
         <ListGroup variant="flush">
           <ListGroup.Item className="bg-dark">
-            <a href="#" className="text-light ">
+            <a href="http://www.bwifingal.ie/i-webs/" className="text-light ">
               I-WeBS
             </a>
           </ListGroup.Item>
           <ListGroup.Item className="bg-dark">
-            <a href="#" className="text-light ">
+            <a
+              href="https://birdwatchireland.ie/our-work/surveys-research/research-surveys/countryside-bird-survey/"
+              className="text-light "
+            >
               Countryside Bird Survey
             </a>
           </ListGroup.Item>
           <ListGroup.Item className="bg-dark">
-            <a href="#" className="text-light ">
+            <a
+              href="https://birdwatchireland.ie/our-work/surveys-research/research-surveys/irish-garden-bird-survey/"
+              className="text-light "
+            >
               Garden Bird Survey
             </a>
           </ListGroup.Item>
           <ListGroup.Item className="bg-dark">
-            <a href="#" className="text-light ">
-              Lapwing Breeding Survey - Rogerstown
-            </a>
+            {/* <a href="#" className="text-light "> */}
+            Lapwing Breeding Survey - Rogerstown
+            {/* </a> */}
           </ListGroup.Item>
           <ListGroup.Item className="bg-dark">
-            <a href="#" className="text-light ">
+            <a
+              href="http://www.bwifingal.ie/birds/little-tern/"
+              className="text-light "
+            >
               Little Tern Breeding Survey - Portrane
             </a>
           </ListGroup.Item>

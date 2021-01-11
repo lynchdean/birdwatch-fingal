@@ -4,6 +4,8 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import brand from "./assets/brand.png";
+import IWebs from "./pages/IWebs";
+import Hides from "./pages/Hides";
 
 export default function App() {
   return (
@@ -18,16 +20,28 @@ export default function App() {
           />{" "}
         </Navbar.Brand>
         <Nav className="mr-auto">
-          <Navbar.Text className="mr-2">
+          <Navbar.Text className="mr-3">
             <Link to="/">Home</Link>
           </Navbar.Text>
-          <Navbar.Text className="mr-2">
+          <Navbar.Text className="mr-3">
             <Link to="/about">About</Link>
+          </Navbar.Text>
+          <Navbar.Text className="mr-3">
+            <Link to="/hides">Rogerstown Hides</Link>
+          </Navbar.Text>
+          <Navbar.Text className="mr-3">
+            <Link to="/iWebs">iWebs</Link>
           </Navbar.Text>
         </Nav>
       </Navbar>
 
       <Switch>
+        <Route path="/iwebs">
+          <IWebs />
+        </Route>
+        <Route path="/hides">
+          <Hides />
+        </Route>
         <Route path="/about">
           <About />
         </Route>

@@ -12,6 +12,7 @@ import FingalLocation from "../assets/fingal-location.png";
 import Rogerstown from "../assets/rogerstown.jpg";
 import MemberLogo from "../assets/member-logo.png";
 import "./css/home.css";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   return (
@@ -28,11 +29,11 @@ export default function Home() {
             The hide in Turvey park Rogerstown is CLOSED until further notice.
           </p>
           <p>
-            If you are planning to visit please check
-            http://bwifingal.ie/rogerstown-hides/ to see if a warden has been
-            assigned for that date. We rely on volunteers and it is not always
-            possible to cover every Saturday and Sunday between September and
-            March.
+            If you are planning to visit please check{" "}
+            <Link to="/hides">Rogerstown Hides </Link>
+            to see if a warden has been assigned for that date. We rely on
+            volunteers and it is not always possible to cover every Saturday and
+            Sunday between September and March.
           </p>
           <p>
             All talks and outings are postponed until further notice. This step
