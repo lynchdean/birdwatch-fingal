@@ -4,8 +4,10 @@ import {
   Button,
   Card,
   CardColumns,
+  Col,
   Container,
   Jumbotron,
+  Row,
 } from "react-bootstrap";
 import { Timeline } from "react-twitter-widgets";
 import FingalLocation from "../assets/fingal-location.png";
@@ -43,8 +45,8 @@ export default function Home() {
         </Alert>
 
         {/* Main Content */}
+        <Welcome />
         <CardColumns>
-          <Welcome />
           <BecomeMember />
           <WetlandsExperiment />
           <TwitterFeed />
@@ -56,35 +58,41 @@ export default function Home() {
 
 function Welcome() {
   return (
-    <Card bg="dark" text="light">
+    <Card className="mb-4" bg="dark" text="light">
       <Card.Body>
-        <Card.Text>
-          <p>
-            Welcome to the Fingal branch of Birdwatch Ireland. Fingal is
-            situated in North Co. Dublin and can boast of great birding spots
-            for the beginner and experienced birder alike. Fingal extends from
-            the outer limits of Dublin city to Meath in the North and to the
-            West.
-          </p>
-          <p>
-            Due to its location on the east coast there is a good variety of
-            coastal habitat to be found including beaches, cliffs, islands and
-            estuaries as well as agricultural land, woodland etc.. Rockabill
-            Island off the coast from Skerries holds one of Europe's largest
-            breeding colonies of Rosate Terns while during the winter months
-            Rogerstown Estuary holds internationally important numbers of
-            Pale-bellied Brent Geese, along with a further 10 species of
-            wintering waterfowl in nationally important numbers, including
-            Wigeon and Black-tailed Godwit.
-          </p>
-        </Card.Text>
-        <Card.Link href="mailto:bwifingal@gmail.com">
-          <Button variant="info" size="sm" block>
-            For questions contact bwifingal@gmail.com
-          </Button>
-        </Card.Link>
+        <Row>
+          <Col md={8}>
+            <Card.Text>
+              <p>
+                Welcome to the Fingal branch of Birdwatch Ireland. Fingal is
+                situated in North Co. Dublin and can boast of great birding
+                spots for the beginner and experienced birder alike. Fingal
+                extends from the outer limits of Dublin city to Meath in the
+                North and to the West.
+              </p>
+              <p>
+                Due to its location on the east coast there is a good variety of
+                coastal habitat to be found including beaches, cliffs, islands
+                and estuaries as well as agricultural land, woodland etc..
+                Rockabill Island off the coast from Skerries holds one of
+                Europe's largest breeding colonies of Rosate Terns while during
+                the winter months Rogerstown Estuary holds internationally
+                important numbers of Pale-bellied Brent Geese, along with a
+                further 10 species of wintering waterfowl in nationally
+                important numbers, including Wigeon and Black-tailed Godwit.
+              </p>
+            </Card.Text>
+            <Card.Link className="align-self-end">
+              <Button variant="info" size="sm" block>
+                For questions contact bwifingal@gmail.com
+              </Button>
+            </Card.Link>
+          </Col>
+          <Col md={4}>
+            <Card.Img variant="bottom" src={FingalLocation} />
+          </Col>
+        </Row>
       </Card.Body>
-      <Card.Img variant="bottom" src={FingalLocation} />
     </Card>
   );
 }
@@ -157,18 +165,13 @@ function TwitterFeed() {
             ></script>
           </div>
         </Card.Title>
-        <Card.Text>
-          Follow us over on Twitter where we provide more regular updates and
-          news
-          <br />
-        </Card.Text>
         <Timeline
           dataSource={{
             sourceType: "profile",
             screenName: "BWIFingal",
           }}
           options={{
-            height: 876,
+            height: 510,
             theme: "dark",
           }}
         />

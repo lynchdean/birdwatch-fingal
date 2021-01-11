@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Container, Table, Image } from "react-bootstrap";
+import { Card, Container, Table, Image, Row, Col } from "react-bootstrap";
 import IWebsLogo from "../assets/iwebs.jpg";
 
 function IWebs() {
@@ -8,28 +8,29 @@ function IWebs() {
       <Card className="my-4" bg="dark" text="light">
         <Card.Header>I-Webs</Card.Header>
         <Card.Body>
-          <div className="text-center mb-2">
-            <Image
-              className="mx-auto d-block m-2"
-              src={IWebsLogo}
-              rounded
-              height="200"
-            />
-
-            <b>Ireland Wetland Bird Survey (I-WeBS)</b>
-          </div>
-
-          <p>
-            Ireland Wetland bird survey counts of Rogerstown Estuary The birds
-            of Fingal's estuaries and coast line are counted once a month
-            between September and March as part of I-WeBS. The counts have to be
-            coordinated to provide accurate numbers as birds frequently move
-            from one area to another. For Rogerstown a team of counters meet up
-            and are given a section of the estuary to count. The numbers and
-            then correlated and passed onto the I-WeBS office. The results are
-            published annually and are used to track population trends over
-            time.
-          </p>
+          <Row>
+            <Col md={9}>
+              <p>
+                <b>Ireland Wetland Bird Survey (I-Webs)</b> counts of Rogerstown
+                Estuary The birds of Fingal's estuaries and coast line are
+                counted once a month between September and March as part of
+                I-WeBS. The counts have to be coordinated to provide accurate
+                numbers as birds frequently move from one area to another. For
+                Rogerstown a team of counters meet up and are given a section of
+                the estuary to count. The numbers and then correlated and passed
+                onto the I-WeBS office. The results are published annually and
+                are used to track population trends over time.
+              </p>
+            </Col>
+            <Col md={3}>
+              <Image
+                className="mb-4 mx-auto d-block"
+                src={IWebsLogo}
+                rounded
+                height="140"
+              />
+            </Col>
+          </Row>
 
           <Table striped bordered hover size="sm" variant="dark">
             <thead>
