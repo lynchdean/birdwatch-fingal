@@ -4,7 +4,6 @@ import {
   Button,
   Card,
   CardColumns,
-  CardDeck,
   Container,
   Jumbotron,
 } from "react-bootstrap";
@@ -17,13 +16,17 @@ import "./css/home.css";
 export default function Home() {
   return (
     <div>
-      <Jumbotron className="jumbo" />
+      <Jumbotron className="jumbo text-center p-0 pl-4">
+        <Container className="inner-jumbo" />
+      </Jumbotron>
       <Container>
         <Alert className="my-4" variant="danger">
           <p>
-            <b>21/10/2020</b>
+            <b>26/12/2020</b>
           </p>
-          <p>The hide in Turvey park Rogerstown is CLOSED until December.</p>
+          <p>
+            The hide in Turvey park Rogerstown is CLOSED until further notice.
+          </p>
           <p>
             If you are planning to visit please check
             http://bwifingal.ie/rogerstown-hides/ to see if a warden has been
@@ -32,7 +35,6 @@ export default function Home() {
             March.
           </p>
           <p>
-            {" "}
             All talks and outings are postponed until further notice. This step
             has been taken to help to ensure the safety of our visitors and our
             volunteers.
@@ -46,16 +48,6 @@ export default function Home() {
           <WetlandsExperiment />
           <TwitterFeed />
         </CardColumns>
-
-        {/* Bottom Content (Max 3 cards) */}
-        <Card className="my-4" bg="dark" text="light">
-          <Card.Header>Latest Updates:</Card.Header>
-          <CardDeck className="p-4">
-            <CardOne />
-            <CardTwo />
-            <CardThree />
-          </CardDeck>
-        </Card>
       </Container>
     </div>
   );
@@ -180,49 +172,6 @@ function TwitterFeed() {
           }}
         />
       </Card.Body>
-    </Card>
-  );
-}
-
-function CardOne() {
-  return (
-    <Card bg="light" text="dark">
-      <Card.Header>
-        Canada’s Wildlife: An illustrated talk by Eamon & Christine O’Daly
-      </Card.Header>
-      <Card.Body className="p-0">
-        <Card.Img variant="top" src={Rogerstown} />
-      </Card.Body>
-      <Card.Footer>Thursday 6th Feb, Blue Bar, Skerries, 8pm 2020</Card.Footer>
-    </Card>
-  );
-}
-
-function CardTwo() {
-  return (
-    <Card bg="light" text="dark">
-      <Card.Header>What to do if you find a baby or injured bird.</Card.Header>
-      <Card.Body className="p-0">
-        <Card.Img variant="top" src={Rogerstown} />
-      </Card.Body>
-      <Card.Footer>Outing to Dundalk Bay</Card.Footer>
-    </Card>
-  );
-}
-
-function CardThree() {
-  return (
-    <Card bg="light" text="dark">
-      <Card.Header>
-        Canada’s Wildlife: An illustrated talk by Eamon & Christine O’Daly
-      </Card.Header>
-      <Card.Body className="p-0">
-        <Card.Img variant="top" src={Rogerstown} />
-      </Card.Body>
-      <Card.Footer>
-        Saturday 23rd February, 2020 Meet at The Spirit Store, Dundalk Docks @
-        10:15.
-      </Card.Footer>
     </Card>
   );
 }

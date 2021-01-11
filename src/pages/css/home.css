@@ -1,12 +1,19 @@
+.inner-jumbo {
+  height: 400px;
+  background-image: url("../../assets/bwi-logo-t-w.png");
+  background-attachment: scroll;
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-size: auto 250px;
+}
+
 .jumbo {
   height: 400px;
-  background-image: url("../../assets/bwi-logo-t-w.png"),
-    url("../../assets/image_45.jpg");
-  background-attachment: scroll, fixed;
-  background-position: center center, center center;
-  background-repeat: no-repeat, no-repeat;
-  background-size: auto 250px, cover;
-  /* background-color: white !important; */
+  background-image: url("../../assets/image_45.jpg");
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .white-bg {

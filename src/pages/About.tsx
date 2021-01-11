@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Container, ListGroup, ListGroupItem } from "react-bootstrap";
+import { Card, Container, ListGroup } from "react-bootstrap";
 
 function About() {
   return (
