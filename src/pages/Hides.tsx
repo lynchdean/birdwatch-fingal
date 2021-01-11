@@ -37,7 +37,7 @@ function Hides() {
           <Card.Text>
             <Alert variant="danger">
               Due to current COVID restrictions, there are currently no roster
-              in place.
+              in place for January
             </Alert>
 
             <p>
