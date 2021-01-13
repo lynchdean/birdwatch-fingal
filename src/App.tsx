@@ -19,7 +19,7 @@ export default function App() {
               src={brand}
               width="200"
               className="d-inline-block align-top my-2 mr-4"
-            />{" "}
+            />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -27,26 +27,15 @@ export default function App() {
               <LinkContainer to="/">
                 <Nav.Link>Home</Nav.Link>
               </LinkContainer>
-
               <LinkContainer to="/about">
                 <Nav.Link>About</Nav.Link>
               </LinkContainer>
               <LinkContainer to="/hides">
                 <Nav.Link>Rogerstown Hides</Nav.Link>
               </LinkContainer>
-
               <LinkContainer to="/iWebs">
                 <Nav.Link>I-Webs</Nav.Link>
               </LinkContainer>
-              {/* <Navbar.Text className="mr-3">
-                <Link to="/about">About</Link>
-              </Navbar.Text>
-              <Navbar.Text className="mr-3">
-                <Link to="/hides">Rogerstown Hides</Link>
-              </Navbar.Text>
-              <Navbar.Text className="mr-3">
-                <Link to="/iWebs">iWebs</Link>
-              </Navbar.Text> */}
             </Nav>
           </Navbar.Collapse>
         </Navbar>

@@ -23,26 +23,7 @@ export default function Home() {
         <Container className="inner-jumbo" />
       </Jumbotron>
       <Container>
-        <Alert className="my-4" variant="danger">
-          <p>
-            <b>26/12/2020</b>
-          </p>
-          <p>
-            The hide in Turvey park Rogerstown is CLOSED until further notice.
-          </p>
-          <p>
-            If you are planning to visit please check{" "}
-            <Link to="/hides">Rogerstown Hides </Link>
-            to see if a warden has been assigned for that date. We rely on
-            volunteers and it is not always possible to cover every Saturday and
-            Sunday between September and March.
-          </p>
-          <p>
-            All talks and outings are postponed until further notice. This step
-            has been taken to help to ensure the safety of our visitors and our
-            volunteers.
-          </p>
-        </Alert>
+        <Warn />
 
         {/* Main Content */}
         <Welcome />
@@ -53,6 +34,29 @@ export default function Home() {
         </CardColumns>
       </Container>
     </div>
+  );
+}
+
+function Warn() {
+  return (
+    <Alert className="my-4" variant="danger">
+      <p>
+        <b>26/12/2020</b>
+      </p>
+      <p>The hide in Turvey park Rogerstown is CLOSED until further notice.</p>
+      <p>
+        If you are planning to visit please check{" "}
+        <Link to="/hides">Rogerstown Hides </Link>
+        to see if a warden has been assigned for that date. We rely on
+        volunteers and it is not always possible to cover every Saturday and
+        Sunday between September and March.
+      </p>
+      <p>
+        All talks and outings are postponed until further notice. This step has
+        been taken to help to ensure the safety of our visitors and our
+        volunteers.
+      </p>
+    </Alert>
   );
 }
 
