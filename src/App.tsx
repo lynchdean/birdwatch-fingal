@@ -10,7 +10,7 @@ import Hides from "./pages/Hides";
 export default function App() {
   return (
     <Router>
-      <Navbar bg="dark" variant="dark">
+      <Navbar bg="dark" variant="dark" expand="md">
         <Navbar.Brand href="/">
           <img
             alt="BirdWatch Fingal"
@@ -19,20 +19,23 @@ export default function App() {
             className="d-inline-block align-top my-2 mr-4"
           />{" "}
         </Navbar.Brand>
-        <Nav className="mr-auto">
-          <Navbar.Text className="mr-3">
-            <Link to="/">Home</Link>
-          </Navbar.Text>
-          <Navbar.Text className="mr-3">
-            <Link to="/about">About</Link>
-          </Navbar.Text>
-          <Navbar.Text className="mr-3">
-            <Link to="/hides">Rogerstown Hides</Link>
-          </Navbar.Text>
-          <Navbar.Text className="mr-3">
-            <Link to="/iWebs">iWebs</Link>
-          </Navbar.Text>
-        </Nav>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mr-auto">
+            <Navbar.Text className="mr-3">
+              <Link to="/">Home</Link>
+            </Navbar.Text>
+            <Navbar.Text className="mr-3">
+              <Link to="/about">About</Link>
+            </Navbar.Text>
+            <Navbar.Text className="mr-3">
+              <Link to="/hides">Rogerstown Hides</Link>
+            </Navbar.Text>
+            <Navbar.Text className="mr-3">
+              <Link to="/iWebs">iWebs</Link>
+            </Navbar.Text>
+          </Nav>
+        </Navbar.Collapse>
       </Navbar>
 
       <Switch>

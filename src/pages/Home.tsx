@@ -12,7 +12,7 @@ import {
 import { Timeline } from "react-twitter-widgets";
 import FingalLocation from "../assets/fingal-location.png";
 import Rogerstown from "../assets/rogerstown.jpg";
-import MemberLogo from "../assets/member-logo.png";
+import MemberLogo from "../assets/bwi-logo.jpg";
 import "./css/home.css";
 import { Link } from "react-router-dom";
 
@@ -61,7 +61,7 @@ function Welcome() {
     <Card className="mb-4" bg="dark" text="light">
       <Card.Body>
         <Row>
-          <Col md={8}>
+          <Col md={8} className="d-flex flex-column">
             <Card.Text>
               <p>
                 Welcome to the Fingal branch of Birdwatch Ireland. Fingal is
@@ -82,8 +82,8 @@ function Welcome() {
                 important numbers, including Wigeon and Black-tailed Godwit.
               </p>
             </Card.Text>
-            <Card.Link className="align-self-end">
-              <Button variant="info" size="sm" block>
+            <Card.Link className="mt-auto" href="mailto:bwifingal@gmail.com">
+              <Button variant="info" block>
                 For questions contact bwifingal@gmail.com
               </Button>
             </Card.Link>
@@ -112,14 +112,12 @@ function BecomeMember() {
           </p>
         </Card.Text>
         <Card.Link href="https://birdwatchireland.ie/get-involved/join-us-become-a-member/">
-          <Button variant="light" block>
-            <Card.Img className="p-4" variant="bottom" src={MemberLogo} />
-            <Button className="mt-2 mb-3" variant="info" size="sm">
-              Become a member of BirdWatch Ireland
-            </Button>
+          <Button className="mt-2" variant="info" block>
+            Become a member of BirdWatch Ireland
           </Button>
         </Card.Link>
       </Card.Body>
+      <Card.Img variant="bottom" src={MemberLogo} />
     </Card>
   );
 }
