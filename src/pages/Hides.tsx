@@ -1,5 +1,5 @@
 import React from "react";
-import { Alert, Card, Container, ListGroup } from "react-bootstrap";
+import { Alert, Button, Card, Container, ListGroup } from "react-bootstrap";
 import SiteMap from "../assets/Hides-map.jpg";
 import DarkCard from "../components/DarkCard";
 
@@ -36,12 +36,13 @@ function Hides() {
         <Card.Header>2020/21 Roster</Card.Header>
         <Card.Body>
           <Card.Text>
-            <Alert variant="danger">
-              Due to current COVID restrictions, there are currently no roster
-              in place for January
-              https://docs.google.com/spreadsheets/d/18I5U3M8or1o3oYTaWid3dGJd_8Pd8cNJU685vX0MD0E/edit#gid=0
-            </Alert>
-
+            <a
+              href="https://docs.google.com/spreadsheets/d/18I5U3M8or1o3oYTaWid3dGJd_8Pd8cNJU685vX0MD0E/edit#gid=0"
+              className="btn btn-lg btn-info btn-block mb-2"
+              role="button"
+            >
+              View Roster
+            </a>
             <p>
               If you would like to volunteer for hide duty please contact Paul
               at bwifingal@gmail.com{" "}

@@ -57,7 +57,7 @@ export default function App() {
         </div>
         <nav className="navbar navbar-fixed-bottom navbar-dark bg-dark text-light">
           <div className="navbar-text mx-auto">
-            <small>© 2020. Bird Watch Ireland. All Rights Reserved.</small>
+            <small>© 2021. Bird Watch Ireland. All Rights Reserved.</small>
           </div>
         </nav>
       </Router>
