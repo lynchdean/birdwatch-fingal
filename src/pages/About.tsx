@@ -1,5 +1,7 @@
 import React from "react";
 import { Card, CardColumns, Container, ListGroup } from "react-bootstrap";
+import DarkCard from "../components/DarkCard";
+import data from "./data/about";
 
 export default function About() {
   return (
@@ -7,9 +9,7 @@ export default function About() {
       <Info />
       <CardColumns>
         <Surveys />
-        <Events />
-        <Hides />
-        <Fundraising />
+        <InfoCards />
       </CardColumns>
     </Container>
   );
@@ -79,63 +79,12 @@ function Surveys() {
   );
 }
 
-function Events() {
+function InfoCards() {
   return (
-    <Card className="mt-4" bg="dark" text="light">
-      <Card.Header>
-        <h5>Events:</h5>
-      </Card.Header>
-      <Card.Body>
-        <Card.Text>
-          <p>
-            We host a series of indoor and outdoor events throughout the year.
-            See our Events page for more details. These events are open to the
-            public and free of charge with an option to make a small donation at
-            the end. We regularly support joint events with organisations such
-            Fingal County Council, local schools, tidy town groups and other
-            societies, giving talks or walks.
-          </p>
-        </Card.Text>
-      </Card.Body>
-    </Card>
-  );
-}
-
-function Hides() {
-  return (
-    <Card className="mt-4" bg="dark" text="light">
-      <Card.Header>
-        <h5>Hides:</h5>
-      </Card.Header>
-      <Card.Body>
-        <Card.Text>
-          <p>
-            We maintain two hides at Rogerstown estuary. See our Rogerstown
-            Hides page for more details.
-          </p>
-        </Card.Text>
-      </Card.Body>
-    </Card>
-  );
-}
-
-function Fundraising() {
-  return (
-    <Card className="mt-4" bg="dark" text="light">
-      <Card.Header>
-        <h5>Fundraising:</h5>
-      </Card.Header>
-      <Card.Body>
-        <Card.Text>
-          <p>
-            We rely on the support of the public to finance our activities, such
-            as the maintenance of the hides at Rogerstown and running the Little
-            Tern and Lapwing projects. Our main fundraiser is the annual General
-            Knowledge Pub Quiz in January every year so your support is much
-            welcomed.
-          </p>
-        </Card.Text>
-      </Card.Body>
-    </Card>
+    <div>
+      {data.cards.map((card: any, index: number) => {
+        return <DarkCard key={index} title={card.heading} text={card.text} />;
+      })}
+    </div>
   );
 }

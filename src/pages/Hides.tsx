@@ -1,6 +1,7 @@
 import React from "react";
 import { Alert, Card, Container, ListGroup } from "react-bootstrap";
 import SiteMap from "../assets/Hides-map.jpg";
+import DarkCard from "../components/DarkCard";
 
 function Hides() {
   return (
@@ -38,6 +39,7 @@ function Hides() {
             <Alert variant="danger">
               Due to current COVID restrictions, there are currently no roster
               in place for January
+              https://docs.google.com/spreadsheets/d/18I5U3M8or1o3oYTaWid3dGJd_8Pd8cNJU685vX0MD0E/edit#gid=0
             </Alert>
 
             <p>
