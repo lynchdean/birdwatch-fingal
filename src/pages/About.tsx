@@ -36,7 +36,7 @@ function Surveys() {
       <ListGroup variant="flush">
         {data.links.map((link: any, index: number) => {
           return (
-            <ListGroup.Item className="bg-dark">
+            <ListGroup.Item className="bg-dark" key={index}>
               <a href={link.uri} className="text-light ">
                 {link.title}
               </a>

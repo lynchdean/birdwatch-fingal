@@ -71,7 +71,7 @@ function Hides() {
 
       <Card className="mt-4" bg="dark" text="light">
         <Card.Header>Site Map</Card.Header>
-        <Card.Img variant="top" src={SiteMap} />
+        <Card.Img variant="top" src={SiteMap} alt="Rogerstown Hides Map" />
       </Card>
 
       <CardColumns className="mt-0 mb-4">

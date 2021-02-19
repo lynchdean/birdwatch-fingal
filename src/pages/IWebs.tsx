@@ -32,6 +32,14 @@ function IWebs() {
             </Col>
           </Row>
 
+          <a
+            href="https://docs.google.com/spreadsheets/d/1Y9me-h63ZsqC6ITFmZcI23To04Zgfo98b1q4Sz4wihI/edit#gid=0"
+            className="btn btn-lg btn-info btn-block mb-2"
+            role="button"
+          >
+            View Scedule
+          </a>
+
           <Table striped bordered hover size="sm" variant="dark">
             <thead>
               <tr>
