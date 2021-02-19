@@ -1,4 +1,7 @@
 const data = {
+  blurb:
+    "The Fingal Branch is run by a small committee of dedicated volunteers who are passionate about the conservation of wild birds and their habitat in the Fingal area. The Branch formed in 1985 when Rogerstown estuary came under treat of the development of a large landfill site.",
+
   links: [
     { title: "I-WeBS", uri: "http://www.bwifingal.ie/i-webs/" },
     {
