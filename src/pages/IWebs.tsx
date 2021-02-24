@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Container, Table, Image, Row, Col } from "react-bootstrap";
+import { Card, Container, Image, Row, Col } from "react-bootstrap";
 import IWebsLogo from "../assets/iwebs.jpg";
 
 function IWebs() {
@@ -34,66 +34,12 @@ function IWebs() {
 
           <a
             href="https://docs.google.com/spreadsheets/d/1Y9me-h63ZsqC6ITFmZcI23To04Zgfo98b1q4Sz4wihI/edit#gid=0"
-            className="btn btn-lg btn-info btn-block mb-2"
+            className="btn btn-lg btn-info btn-block mb-3"
             role="button"
           >
             View Scedule
           </a>
 
-          <Table striped bordered hover size="sm" variant="dark">
-            <thead>
-              <tr>
-                <th>Date</th>
-                <th>Hide Tide Time & Height</th>
-                <th>Meeting Time</th>
-                <th>Count Start Time</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Sept 5th</td>
-                <td>14.24. 3.8mtrs.</td>
-                <td>13:00</td>
-                <td>13:30</td>
-              </tr>
-              <tr>
-                <td>Oct 3rd</td>
-                <td>13.22. 3.9mtrs.</td>
-                <td>11:30</td>
-                <td>12:00</td>
-              </tr>
-              <tr>
-                <td>Nov 7th</td>
-                <td>15.33. 3.5mtrs.</td>
-                <td>14:00</td>
-                <td>14:30</td>
-              </tr>
-              <tr>
-                <td>Dec 5th</td>
-                <td>14.29. 3.8mtrs.</td>
-                <td>13:00</td>
-                <td>13:30</td>
-              </tr>
-              <tr>
-                <td>Jan 16th</td>
-                <td>13.42. 4.1 mtrs.</td>
-                <td>12:00</td>
-                <td>12:30</td>
-              </tr>
-              <tr>
-                <td>Feb 13th</td>
-                <td>12.42. 4.2 mtrs.</td>
-                <td>11:00</td>
-                <td>11:30</td>
-              </tr>
-              <tr>
-                <td>Mar 13th</td>
-                <td>15.08. 4.1 mtrs</td>
-                <td>10:00</td>
-                <td>10:30</td>
-              </tr>
-            </tbody>
-          </Table>
           <div className="text-center mb-2">
             <b>Meet at Turvey Nature Park car park on Turvey Avenue</b>
           </div>
