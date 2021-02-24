@@ -7,6 +7,9 @@ import About from "./pages/About";
 import brand from "./assets/brand.png";
 import IWebs from "./pages/IWebs";
 import Hides from "./pages/Hides";
+import Sites from "./pages/Sites";
+import Birds from "./pages/Birds";
+import Links from "./pages/Links";
 
 export default function App() {
   return (
@@ -36,11 +39,29 @@ export default function App() {
               <LinkContainer to="/iWebs">
                 <Nav.Link>I-Webs</Nav.Link>
               </LinkContainer>
+              <LinkContainer to="/sites">
+                <Nav.Link>Sites</Nav.Link>
+              </LinkContainer>
+              <LinkContainer to="/birds">
+                <Nav.Link>Birds</Nav.Link>
+              </LinkContainer>
+              <LinkContainer to="/links">
+                <Nav.Link>Links</Nav.Link>
+              </LinkContainer>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
         <div className="flex-fill">
           <Switch>
+            <Route path="/links">
+              <Links />
+            </Route>
+            <Route path="/birds">
+              <Birds />
+            </Route>
+            <Route path="/sites">
+              <Sites />
+            </Route>
             <Route path="/iwebs">
               <IWebs />
             </Route>
