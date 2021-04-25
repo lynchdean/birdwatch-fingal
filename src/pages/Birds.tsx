@@ -1,11 +1,41 @@
 import React from "react";
-import { Container } from "react-bootstrap";
-import DarkCard from "../components/DarkCard";
+import { Card, Container, ListGroup } from "react-bootstrap";
+import data from "./data/terns"
 
 export default function Birds() {
   return (
-    <Container className="">
-      <DarkCard title="Birds" text="Content to be added soon" />
+    <Container>
+      <Card className="m-4" bg="dark" text="light">
+        <Card.Header>
+          <h5>Little Terns</h5>
+        </Card.Header>
+        <ListGroup variant="flush">
+          <ListGroup.Item className="bg-dark">
+          <a
+            href="https://docs.google.com/spreadsheets/d/1HuhB-pSqrUbNAT2dQMlzXq5TUxcq1PGhTG_Xj0A8Z_U/edit?usp=sharing"
+            className="btn btn-lg btn-info btn-block mb-3"
+            role="button"
+          >
+            View Little Tern Warden Roster
+          </a>
+          </ListGroup.Item>
+          <ListGroup.Item className="bg-dark">
+            {data.p1}
+          </ListGroup.Item>
+          <ListGroup.Item className="bg-dark">
+            {data.p2}
+          </ListGroup.Item>
+          <ListGroup.Item className="bg-dark">
+            {data.p3}
+          </ListGroup.Item>
+          <ListGroup.Item className="bg-dark">
+            {data.p4}
+          </ListGroup.Item>
+          <ListGroup.Item className="bg-dark">
+            {data.p5}
+          </ListGroup.Item>
+        </ListGroup>
+      </Card>
     </Container>
   );
 }
