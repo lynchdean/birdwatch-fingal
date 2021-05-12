@@ -15,7 +15,7 @@ import Rogerstown from "../assets/rogerstown.jpg";
 import MemberLogo from "../assets/bwi-logo.jpg";
 import "./css/home.css";
 import { Link } from "react-router-dom";
-import DarkCard from "../components/DarkCard";
+
 
 export default function Home() {
   return (
