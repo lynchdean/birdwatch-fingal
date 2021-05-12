@@ -30,9 +30,9 @@ export default function Home() {
         <Welcome />
         <CardColumns>
           <BecomeMember />
+          <YouTube/>
           <WetlandsExperiment />
           <TwitterFeed />
-          <YouTube/>
         </CardColumns>
       </Container>
     </div>
