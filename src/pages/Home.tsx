@@ -15,6 +15,7 @@ import Rogerstown from "../assets/rogerstown.jpg";
 import MemberLogo from "../assets/bwi-logo.jpg";
 import "./css/home.css";
 import { Link } from "react-router-dom";
+import DarkCard from "../components/DarkCard";
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
           <BecomeMember />
           <WetlandsExperiment />
           <TwitterFeed />
+          <YouTube/>
         </CardColumns>
       </Container>
     </div>
@@ -177,6 +179,23 @@ function TwitterFeed() {
             theme: "dark",
           }}
         />
+      </Card.Body>
+    </Card>
+  );
+}
+
+function YouTube() {
+  return(
+    <Card bg="dark" text="light">
+      <Card.Body>
+        <Card.Title>
+          Blue Tit Nest Box
+        </Card.Title>
+        <Card.Link href="https://www.youtube.com/channel/UCafJYsbnArxmjs9-wV_SiQg">
+          <Button variant="info" block>
+            YouTube
+          </Button>
+        </Card.Link>
       </Card.Body>
     </Card>
   );
