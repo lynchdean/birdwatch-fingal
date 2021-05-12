@@ -12,7 +12,7 @@ export default function Birds() {
         <ListGroup variant="flush">
           <ListGroup.Item className="bg-dark">
           <a
-            href="https://docs.google.com/spreadsheets/d/1HuhB-pSqrUbNAT2dQMlzXq5TUxcq1PGhTG_Xj0A8Z_U/edit?usp=sharing"
+            href="https://drive.google.com/file/d/1IqCui6InL0wxkYlkzCWWflUpYHzV4eJY/view"
             className="btn btn-lg btn-info btn-block mb-3"
             role="button"
           >
