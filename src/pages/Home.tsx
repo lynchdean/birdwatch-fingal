@@ -13,6 +13,7 @@ import { Timeline } from "react-twitter-widgets";
 import FingalLocation from "../assets/fingal-location.png";
 import Rogerstown from "../assets/rogerstown.jpg";
 import MemberLogo from "../assets/bwi-logo.jpg";
+import NestBox from "../assets/nest-box.jpg"
 import "./css/home.css";
 import { Link } from "react-router-dom";
 
@@ -187,6 +188,7 @@ function TwitterFeed() {
 function YouTube() {
   return(
     <Card bg="dark" text="light">
+      <Card.Img variant="top" src={NestBox} />
       <Card.Body>
         <Card.Title>
           Blue Tit Nest Box

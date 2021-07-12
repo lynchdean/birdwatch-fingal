@@ -1,6 +1,12 @@
 import React from "react";
 import { Card, Container, ListGroup } from "react-bootstrap";
-import data from "./data/terns"
+import data from "./data/terns";
+import Tern1 from "../assets/tern1.jpg";
+import Tern2 from "../assets/tern2.jpg";
+import Tern3 from "../assets/tern3.jpg";
+import Tern4 from "../assets/tern4.jpg";
+import Tern5 from "../assets/tern5.jpg";
+import Tern6 from "../assets/tern6.jpg";
 
 export default function Birds() {
   return (
@@ -11,29 +17,48 @@ export default function Birds() {
         </Card.Header>
         <ListGroup variant="flush">
           <ListGroup.Item className="bg-dark">
-          <a
-            href="https://drive.google.com/file/d/1IqCui6InL0wxkYlkzCWWflUpYHzV4eJY/view"
-            className="btn btn-lg btn-info btn-block mb-3"
-            role="button"
-          >
-            View Little Tern Warden Roster
-          </a>
+            <a
+              href="https://drive.google.com/file/d/1IqCui6InL0wxkYlkzCWWflUpYHzV4eJY/view"
+              className="btn btn-lg btn-info btn-block mb-3"
+              role="button"
+            >
+              View Little Tern Warden Roster
+            </a>
           </ListGroup.Item>
           <ListGroup.Item className="bg-dark">
-            {data.p1}
+            <img src={Tern1} alt="Logo" className="img-fluid" />
           </ListGroup.Item>
           <ListGroup.Item className="bg-dark">
-            {data.p2}
+            <a href="/littletern2020.pdf" className="btn btn-lg btn-info btn-block mb-3"
+              role="button">
+              Little Tern Report 2020 (PDF)
+            </a>
           </ListGroup.Item>
           <ListGroup.Item className="bg-dark">
-            {data.p3}
+            <a href="/littletern2018.pdf" className="btn btn-lg btn-info btn-block mb-3">
+            Little Tern Report 2018 (PDF)
+            </a>
+          </ListGroup.Item>
+          <ListGroup.Item className="bg-dark">{data.p1}</ListGroup.Item>
+          <ListGroup.Item className="bg-dark">
+            <img src={Tern2} alt="Logo" className="img-fluid" />
+          </ListGroup.Item>
+          <ListGroup.Item className="bg-dark">{data.p2}</ListGroup.Item>
+          <ListGroup.Item className="bg-dark">
+            <img src={Tern3} alt="Logo" className="img-fluid" />
+          </ListGroup.Item>
+          <ListGroup.Item className="bg-dark">{data.p3}</ListGroup.Item>
+          <ListGroup.Item className="bg-dark">
+            <img src={Tern4} alt="Logo" className="img-fluid" />
+          </ListGroup.Item>
+          <ListGroup.Item className="bg-dark">{data.p4}</ListGroup.Item>
+          <ListGroup.Item className="bg-dark">
+            <img src={Tern5} alt="Logo" className="img-fluid" />
           </ListGroup.Item>
           <ListGroup.Item className="bg-dark">
-            {data.p4}
+            <img src={Tern6} alt="Logo" className="img-fluid" />
           </ListGroup.Item>
-          <ListGroup.Item className="bg-dark">
-            {data.p5}
-          </ListGroup.Item>
+          <ListGroup.Item className="bg-dark">{data.p5}</ListGroup.Item>
         </ListGroup>
       </Card>
     </Container>
