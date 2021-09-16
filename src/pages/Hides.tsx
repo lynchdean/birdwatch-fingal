@@ -7,25 +7,10 @@ import data from "./data/hides";
 function Hides() {
   return (
     <Container>
-      <Alert className="my-4" variant="danger">
-        <p>
-          The observation hides at Turvey Park Rogerstown is closed until
-          further notice.
-        </p>
-        <p>
-          If you are planning a visit please check the table below to see if a
-          warden has been assigned for that date. We rely on volunteers and it
-          is not always possible to cover every Saturday and Sunday between
-          September and March.
-        </p>
-        <p>
-          To access the North Hide please contact Paul at bwifingal@gmail.com or
-          0876319209.
-        </p>
-        <p>
-          All talks and outings are also postponed. This step has been taken to
-          help to ensure the safety of our visitors and our volunteers.
-        </p>
+      <Alert className="my-4 text-center" variant="info">
+        <h5 className="alert-heading">
+          The observation hides at Turvey Park Rogerstown are now back open!
+        </h5>
       </Alert>
 
       <Card bg="dark" text="light">

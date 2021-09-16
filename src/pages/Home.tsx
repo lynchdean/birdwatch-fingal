@@ -13,10 +13,8 @@ import { Timeline } from "react-twitter-widgets";
 import FingalLocation from "../assets/fingal-location.png";
 import Rogerstown from "../assets/rogerstown.jpg";
 import MemberLogo from "../assets/bwi-logo.jpg";
-import NestBox from "../assets/nest-box.jpg"
+import NestBox from "../assets/nest-box.jpg";
 import "./css/home.css";
-import { Link } from "react-router-dom";
-
 
 export default function Home() {
   return (
@@ -25,41 +23,22 @@ export default function Home() {
         <Container className="inner-jumbo" />
       </Jumbotron>
       <Container>
-        <Warn />
+        <Alert className="my-4 text-center" variant="info">
+          <h5 className="alert-heading">
+            The observation hides at Turvey Park Rogerstown are now back open!
+          </h5>
+        </Alert>
 
         {/* Main Content */}
         <Welcome />
         <CardColumns>
           <BecomeMember />
-          <YouTube/>
+          <YouTube />
           <WetlandsExperiment />
           <TwitterFeed />
         </CardColumns>
       </Container>
     </div>
-  );
-}
-
-function Warn() {
-  return (
-    <Alert className="my-4" variant="danger">
-      <p>
-        <b>26/12/2020</b>
-      </p>
-      <p>The hide in Turvey park Rogerstown is CLOSED until further notice.</p>
-      <p>
-        If you are planning to visit please check{" "}
-        <Link to="/hides">Rogerstown Hides </Link>
-        to see if a warden has been assigned for that date. We rely on
-        volunteers and it is not always possible to cover every Saturday and
-        Sunday between September and March.
-      </p>
-      <p>
-        All talks and outings are postponed until further notice. This step has
-        been taken to help to ensure the safety of our visitors and our
-        volunteers.
-      </p>
-    </Alert>
   );
 }
 
@@ -186,13 +165,11 @@ function TwitterFeed() {
 }
 
 function YouTube() {
-  return(
+  return (
     <Card bg="dark" text="light">
       <Card.Img variant="top" src={NestBox} />
       <Card.Body>
-        <Card.Title>
-          Blue Tit Nest Box
-        </Card.Title>
+        <Card.Title>Blue Tit Nest Box</Card.Title>
         <Card.Link href="https://www.youtube.com/channel/UCafJYsbnArxmjs9-wV_SiQg">
           <Button variant="info" block>
             YouTube
