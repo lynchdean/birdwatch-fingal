@@ -48,6 +48,9 @@ export default function App() {
               <LinkContainer to="/links">
                 <Nav.Link>Links</Nav.Link>
               </LinkContainer>
+              <LinkContainer to="https://docs.google.com/spreadsheets/d/12SfG8sqV5vCh1qfEGdM02i1AeBb2y26BADTigknyEBg/edit#gid=455322855">
+                <Nav.Link>Events</Nav.Link>
+              </LinkContainer>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
