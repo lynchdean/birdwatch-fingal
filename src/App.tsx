@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { Navbar, Nav } from "react-bootstrap";
 import { LinkContainer } from "react-router-bootstrap";
 import Home from "./pages/Home";
@@ -48,9 +48,7 @@ export default function App() {
               <LinkContainer to="/links">
                 <Nav.Link>Links</Nav.Link>
               </LinkContainer>
-              <LinkContainer to="https://docs.google.com/spreadsheets/d/12SfG8sqV5vCh1qfEGdM02i1AeBb2y26BADTigknyEBg/edit#gid=455322855">
-                <Nav.Link>Events</Nav.Link>
-              </LinkContainer>
+              <Link className="nav-link" to={{pathname: "https://docs.google.com/spreadsheets/d/12SfG8sqV5vCh1qfEGdM02i1AeBb2y26BADTigknyEBg/edit#gid=455322855"}} target="_blank">Events</Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
