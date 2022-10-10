@@ -30,10 +30,6 @@ const data = {
       uri: "http://www.irbc.ie/",
     },
     {
-      title: "",
-      uri: "",
-    },
-    {
       title: "RSPB",
       uri: "https://www.rspb.org.uk/",
     },

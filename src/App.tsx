@@ -10,6 +10,7 @@ import Hides from "./pages/Hides";
 import Sites from "./pages/Sites";
 import Birds from "./pages/Birds";
 import Links from "./pages/Links";
+import Downloads from "./pages/Downloads"
 
 export default function App() {
   return (
@@ -48,12 +49,18 @@ export default function App() {
               <LinkContainer to="/links">
                 <Nav.Link>Links</Nav.Link>
               </LinkContainer>
+              <LinkContainer to="/downloads">
+                <Nav.Link>Downloads</Nav.Link>
+              </LinkContainer>
               <Link className="nav-link" to={{pathname: "https://docs.google.com/spreadsheets/d/12SfG8sqV5vCh1qfEGdM02i1AeBb2y26BADTigknyEBg/edit#gid=455322855"}} target="_blank">Events</Link>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
         <div className="flex-fill">
           <Switch>
+            <Route path="/downloads">
+              <Downloads />
+            </Route>
             <Route path="/links">
               <Links />
             </Route>
