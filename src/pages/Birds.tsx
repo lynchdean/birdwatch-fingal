@@ -29,6 +29,12 @@ export default function Birds() {
             <img src={Tern1} alt="Logo" className="img-fluid" />
           </ListGroup.Item>
           <ListGroup.Item className="bg-dark">
+            <a href="/littletern2022.pdf" className="btn btn-lg btn-info btn-block mb-3"
+               role="button">
+              Little Tern Report 2022 (PDF)
+            </a>
+          </ListGroup.Item>
+          <ListGroup.Item className="bg-dark">
             <a href="/littletern2021.pdf" className="btn btn-lg btn-info btn-block mb-3">
               Little Tern Report 2021 (PDF)
             </a>
