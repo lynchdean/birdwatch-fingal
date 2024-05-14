@@ -16,6 +16,15 @@ export default function Birds() {
           <h5>Little Terns</h5>
         </Card.Header>
         <ListGroup variant="flush">
+           <ListGroup.Item className="bg-dark">
+              <a
+                href="https://docs.google.com/spreadsheets/d/1Mf8cWO4WS6nk1uEZAMfzYMB2hJZW4Llxs0Nn6IGqvmo/edit#gid=0"
+                className="btn btn-lg btn-info btn-block mb-3"
+                role="button"
+              >
+                2024 Colony News
+              </a>
+          </ListGroup.Item>
           <ListGroup.Item className="bg-dark">
             <a
               href="https://drive.google.com/file/d/1IqCui6InL0wxkYlkzCWWflUpYHzV4eJY/view"
@@ -27,6 +36,45 @@ export default function Birds() {
           </ListGroup.Item>
           <ListGroup.Item className="bg-dark">
             <img src={Tern1} alt="Logo" className="img-fluid" />
+          </ListGroup.Item>
+          <ListGroup.Item className="bg-dark">
+            <h5>Status:</h5>
+            {data.status}
+          </ListGroup.Item>
+          <ListGroup.Item className="bg-dark">
+            <h5>Identification:</h5>
+            {data.identification}
+          </ListGroup.Item>
+          <ListGroup.Item className="bg-dark">
+            <h5>Voice:</h5>
+            {data.voice}
+          </ListGroup.Item>
+          <ListGroup.Item className="bg-dark">
+            <h5>Diet:</h5>
+            {data.diet}
+          </ListGroup.Item>
+          <ListGroup.Item className="bg-dark">
+            <h5>Breeding:</h5>
+            {data.breeding}
+          </ListGroup.Item>
+          <ListGroup.Item className="bg-dark">
+            <h5>Wintering:</h5>
+            {data.wintering}
+          </ListGroup.Item>
+          <ListGroup.Item className="bg-dark">
+            <h5>Monitored By:</h5>
+            {data.monitoredby}
+          </ListGroup.Item>
+          <ListGroup.Item className="bg-dark">
+            {data.thanks}
+            <br/>
+            <b>{data.help}</b>
+          </ListGroup.Item>
+          <ListGroup.Item className="bg-dark">
+            <a href="/littletern2023.pdf" className="btn btn-lg btn-info btn-block mb-3"
+               role="button">
+              Little Tern Report 2023 (PDF)
+            </a>
           </ListGroup.Item>
           <ListGroup.Item className="bg-dark">
             <a href="/littletern2022.pdf" className="btn btn-lg btn-info btn-block mb-3"

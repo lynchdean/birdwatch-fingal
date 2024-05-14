@@ -8,6 +8,25 @@ const data = {
       "2019 looked like it was going to be an even better year with 18 nests with eggs but unfortunately over the course of two nights a predator managed to clear out 17 of the nests. The one remaining pair raised 3 chicks, two of which were ringed (IX4 & IX5). \n In 2020 9 fledged and 8 were ringed (IV0-IV5, IV7-IV9). Sadly, IV9 was found dead on the beach in early August before it fledged and although IV3 & IV4 were seen many times after fledging their sibling IV2 was not and was presumed dead.",
     p5:
       "Please report any sightings of the mentioned ringed birds to bwifingal@gmail.com. \n\n Note: All photographs taken under licence and are copyrighted. ",
+    status:
+      "Rare summer visitor from April to late August to shingle or sandy beaches, mainly on the east and west coasts.",
+    identification:
+      "The smallest of the terns breeding in Ireland. Small slender seabird with narrow, pointed wings, long forked tail and long, pointed bill. Grey above and white below, dark cap to head, white forehead in all plumages. Flight is light and buoyant, hovers rapidly while foraging over the sea before repeatedly diving in. Has a dark leading edge to the primaries of its long narrow wings. Adult summer bird has long yellow bill with black tip. In winter plumage the white of the forehead extends up over the fore crown, the legs darken and the bill is all black. Juvenile plumage is distinct from the adult with dark bill, barred mantle and dark upper forewing.",
+    voice:
+      "Sharp, rasping and repeated.",
+    diet:
+      "Chiefly marine fish.",
+    breeding:
+      "Nest colonially on the ground on shingle beaches, making them very vulnerable to poor weather and ground predators. Only a few colonies are found in Ireland, with the majority breeding in Counties Louth, Wicklow and Wexford.",
+    wintering:
+      "Winters in coastal areas in western Africa.",
+    monitoredby:
+      "BirdWatch Ireland has been monitoring and protecting breeding Little Terns at Kilcoole beach (Co. Wicklow) since 1985. In addition, the BirdWatch Ireland Fingal Branch have a Little Tern conservation project at Portrane (Co. Dublin), and BirdWatch Ireland partner with Louth Nature Trust to protect the Baltray (Co. Louth) colony.",
+    thanks:
+      "Thanks to the volunteers who warden the colony the Terns have successfully fledged chicks every year since 2018 when the project started.",
+    help:
+      "We need more help! If you can spare a few hours why not join our team of volunteers. For more info email bwifingal@gmail.com",
+
 };
 
 export default data;
