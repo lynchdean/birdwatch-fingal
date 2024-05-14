@@ -27,7 +27,7 @@ export default function Birds() {
           </ListGroup.Item>
           <ListGroup.Item className="bg-dark">
             <a
-              href="https://drive.google.com/file/d/1IqCui6InL0wxkYlkzCWWflUpYHzV4eJY/view"
+              href="https://docs.google.com/spreadsheets/d/1A2BNZEkcOCirsFyDVrNU3NI3UqSrj5p8zziyeGpy3qg"
               className="btn btn-lg btn-info btn-block mb-3"
               role="button"
             >
@@ -36,6 +36,12 @@ export default function Birds() {
           </ListGroup.Item>
           <ListGroup.Item className="bg-dark">
             <img src={Tern1} alt="Logo" className="img-fluid" />
+          </ListGroup.Item>
+          <ListGroup.Item className="bg-dark">
+             <a href="/littletern2023.pdf" className="btn btn-lg btn-info btn-block mb-3"
+                role="button">
+               Little Tern Report 2023 (PDF)
+             </a>
           </ListGroup.Item>
           <ListGroup.Item className="bg-dark">
             <h5>Status:</h5>
