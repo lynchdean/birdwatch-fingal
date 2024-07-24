@@ -7,14 +7,8 @@ import data from "./data/hides";
 function Hides() {
   return (
     <Container>
-      <Alert className="my-4 text-center" variant="info">
-        <h5 className="alert-heading">
-          The observation hides at Turvey Park Rogerstown are now back open!
-        </h5>
-      </Alert>
-
       <Card bg="dark" text="light">
-        <Card.Header>2020/21 Roster</Card.Header>
+        <Card.Header>Roster</Card.Header>
         <Card.Body>
           <Card.Text>
             <a
