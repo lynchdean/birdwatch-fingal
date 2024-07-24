@@ -1,5 +1,5 @@
 import React from "react";
-import { Alert, Card, CardColumns, Container } from "react-bootstrap";
+import { Card, CardColumns, Container } from "react-bootstrap";
 import SiteMap from "../assets/Hides-map.jpg";
 import DarkCard from "../components/DarkCard";
 import data from "./data/hides";
