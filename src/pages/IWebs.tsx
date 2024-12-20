@@ -46,7 +46,7 @@ function IWebs() {
           <p>Would you like to get involved?</p>
           <p>
             If you would like to get involved or if you have any queries, please
-            contact Helen at the I-WeBS Office or simply turn up on the day.
+            contact Paul at bwifingal@gmail.com or simply turn up on the day.
           </p>
         </Card.Body>
       </Card>
