@@ -22,7 +22,6 @@ export function Navbar() {
             <div className="flex flex-1 justify-end px-2">
                 <div className="flex items-stretch">
                     <a className="btn btn-ghost rounded-btn" href={`/`}>Home</a>
-                    <a className="btn btn-ghost rounded-btn" href={`/about`}>About</a>
                     <a className="btn btn-ghost rounded-btn" href={`/hides`}>Rogerstown Hides</a>
                     <a className="btn btn-ghost rounded-btn" href={`/iwebs`}>I-Webs</a>
                     <a className="btn btn-ghost rounded-btn" href={`/birds`}>Birds</a>
