@@ -3,6 +3,7 @@ import {Geist, Geist_Mono} from "next/font/google";
 import "./globals.css";
 import {Navbar} from "@/components/navbar";
 import {Footer} from "@/components/footer";
+import NavbarTest from "@/components/navbar-test";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -27,11 +28,12 @@ export default function RootLayout({
     return (
         <html lang="en">
         <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-base-300`}>
-
+        <NavbarTest/>
         <Navbar/>
         <div className="bg-cover bg-center mb-6 pt-0">
+            {/*<div className="bg-cover mb-6 pt-0"*/}
+            {/*     style={{backgroundImage: "url('/images/031A3934-Edit.png')"}}>*/}
             <div className="container mx-auto px-4 min-h-screen">
-                {/*<div className="bg-cover bg-center mb-6 pt-0" style={{backgroundImage: "url('/images/geese-rm-bg.png')"}}>*/}
                 {children}
             </div>
         </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import {CalendarDaysIcon, HeartIcon, ArrowTopRightOnSquareIcon} from '@heroicons/react/24/solid'
 
 export default function Home() {
     return (
@@ -12,10 +13,13 @@ export default function Home() {
                 />
             </div>
 
-            <div className="grid md:grid-cols-3 sm:grid-cols-1 gap-4 auto-rows-max">
-                <div className="card bg-base-100 shadow-xl">
+
+            <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 auto-rows-max">
+
+                <div className="card lg:col-span-1 md:col-span-2 bg-base-100 shadow-xl">
+                    {/* Welcome */}
                     <div className="card-body">
-                        <h2 className="card-title">Welcome to the Fingal branch of Birdwatch Ireland.</h2>
+                        <h2 className="card-title">Welcome to the Fingal branch of Birdwatch Ireland</h2>
                         <p className="pb-3">
                             The Fingal Branch is run by a small committee of dedicated volunteers who are passionate
                             about
@@ -24,16 +28,17 @@ export default function Home() {
                             when Rogerstown estuary came under treat of the development of a large landfill site.
 
                             <br/><br/>
-                            We maintain two hides at Rogerstown estuary. See our <a className="link" href={`/hides`}>Rogerstown
-                            Hides</a> page for more details.
+                            We maintain two hides at Rogerstown estuary. See our <a className="link" href={`/hides`}>
+                            Hides & Sites</a> page for more details.
                         </p>
                         <div className="card-actions justify-center">
-                            <a href="mailto:bwifingal@gmail.com" className="btn btn-neutral">Contact
+                            <a href="mailto:bwifingal@gmail.com" className="btn btn-neutral w-full">Contact
                                 bwifingal@gmail.com</a>
                         </div>
                     </div>
                 </div>
 
+                {/* About Fingal */}
                 <div className="card md:card-side md:col-span-2 bg-base-100 shadow-xl">
                     <div className="card-body">
                         <h2 className="card-title">About Fingal</h2>
@@ -65,12 +70,51 @@ export default function Home() {
                     </figure>
                 </div>
 
+
+                <div className="card bg-base-100 shadow-xl">
+                    <figure className="bg-white">
+                        <img
+                            src="images/iwebs.jpg"
+                            alt="I-Webs Logo"
+                            className="my-4 max-h-32"
+                        />
+                    </figure>
+                    <div className="card-body">
+                        <h2 className="card-title">I-Webs</h2>
+                        <p>
+                            Ireland Wetland Bird Survey (I-Webs) counts of Rogerstown Estuary The birds of Fingal's
+                            estuaries
+                            and coast line are counted once a month between September and March as part of I-WeBS. The
+                            counts
+                            have to be coordinated to provide accurate numbers as birds frequently move from one area to
+                            another. For Rogerstown a team of counters meet up and are given a section of the estuary to
+                            count.
+                            The numbers and then correlated and passed onto the I-WeBS office. The results are published
+                            annually and are used to track population trends over time.
+                        </p>
+                        <p>
+                            If you would like to get involved or if you have any queries, please contact Helen at the
+                            I-WeBS Office, email bwifingal@gmail.com or simply turn up on the day. New volunteers are
+                            always needed and will be trained by our experienced counters.
+                        </p>
+                        <p className="font-bold">Meet at Turvey Nature Park car park on Turvey Avenue</p>
+                        <div className="card-actions justify-center">
+                            <a href="https://docs.google.com/spreadsheets/d/1Y9me-h63ZsqC6ITFmZcI23To04Zgfo98b1q4Sz4wihI/edit#gid=0"
+                               target="_blank"
+                               className="btn btn-neutral w-full">View Schedule
+                                <ArrowTopRightOnSquareIcon className="size-4"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+                {/* BWI Membership */}
                 <div className="card bg-base-100 shadow-xl">
                     <figure>
                         <img
-                            src="images/bwi-logo-t.png"
+                            src="images/bwi-logo.jpg"
                             alt="BWI Logo"
-                            className="h-48 mx-auto my-4"
                         />
                     </figure>
                     <div className="card-body">
@@ -84,67 +128,79 @@ export default function Home() {
                         </p>
                         <div className="card-actions justify-center">
                             <a href="https://birdwatchireland.ie/get-involved/join-us-become-a-member/" target="_blank"
-                               className="btn btn-neutral">Become a member</a>
+                               className="btn btn-neutral w-full">Become a member
+                                <ArrowTopRightOnSquareIcon className="size-4"/>
+                            </a>
                         </div>
                     </div>
                 </div>
 
-
+                {/* ORE Link */}
                 <div className="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img src="images/ORE.jpg"
+                             alt="ORE Logo"
+                        />
+                    </figure>
                     <div className="card-body">
-                        <figure>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
-                                 stroke="currentColor" className="size-32 my-4">
-                                <path strokeLinecap="round" strokeLinejoin="round"
-                                      d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z"/>
-                            </svg>
-                        </figure>
+                        <p></p>
+                        <div className="card-actions justify-center">
+                            <a href="https://birdwatchireland.ie/our-work/advocacy-policy/climate-change/renewable-energy/offshore-renewables/"
+                               target="_blank"
+                               className="btn btn-neutral w-full">Read More
+                                <ArrowTopRightOnSquareIcon className="size-4"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                {/* Fundraising and Donations */}
+                <div className="card bg-base-100 shadow-xl">
+                    <figure>
+                        <HeartIcon className="size-32 my-4"/>
+                    </figure>
+                    <div className="card-body">
                         <h2 className="card-title">Fundraising and Donations</h2>
                         <p className="pb-3">
                             We rely on the support of the public to finance our activities, such as the maintenance of
-                            the hides at Rogerstown and running the Little Tern and Lapwing projects. Our main
-                            fundraiser is the annual General Knowledge Pub Quiz in January every year so your support is
-                            much welcomed.
-
+                            the hides at Rogerstown and running the Little Tern and Lapwing projects.
                             <br/><br/>
-
                             Every donation, however large or small, is important to us and helps us to protect Fingal's
                             birds and biodiversity and in particular our work with Little Terns at Portrane and our
                             hides at Rogerstown. Thank you for your support.
                         </p>
                         <div className="card-actions justify-center">
                             <a href="https://buy.stripe.com/eVa5nm22EbA78FyfYY" target="_blank"
-                               className="btn btn-neutral">Donate</a>
+                               className="btn btn-neutral w-full">Donate
+                                <ArrowTopRightOnSquareIcon className="size-4"/>
+                            </a>
                         </div>
                     </div>
                 </div>
 
+                {/* Events */}
                 <div className="card bg-base-100 shadow-xl">
+                    <figure>
+                        <CalendarDaysIcon className="size-32 my-4"/>
+                    </figure>
                     <div className="card-body">
-                        <figure>
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
-                                 stroke="currentColor" className="size-32 my-4">
-                                <path strokeLinecap="round" strokeLinejoin="round"
-                                      d="M6.75 3v2.25M17.25 3v2.25M3 18.75V7.5a2.25 2.25 0 0 1 2.25-2.25h13.5A2.25 2.25 0 0 1 21 7.5v11.25m-18 0A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75m-18 0v-7.5A2.25 2.25 0 0 1 5.25 9h13.5A2.25 2.25 0 0 1 21 11.25v7.5m-9-6h.008v.008H12v-.008ZM12 15h.008v.008H12V15Zm0 2.25h.008v.008H12v-.008ZM9.75 15h.008v.008H9.75V15Zm0 2.25h.008v.008H9.75v-.008ZM7.5 15h.008v.008H7.5V15Zm0 2.25h.008v.008H7.5v-.008Zm6.75-4.5h.008v.008h-.008v-.008Zm0 2.25h.008v.008h-.008V15Zm0 2.25h.008v.008h-.008v-.008Zm2.25-4.5h.008v.008H16.5v-.008Zm0 2.25h.008v.008H16.5V15Z"/>
-                            </svg>
-
-                        </figure>
                         <h2 className="card-title">Events</h2>
                         <p className="">
-                            We host a series of indoor and outdoor events throughout the year. See our Events page for
-                            more details. These events are open to the public and free of charge with an option to make
-                            a small donation at the end. We regularly support joint events with organisations such
+                            We host a series of indoor and outdoor events throughout the year. Click the button below
+                            for more details. These events are open to the public and free of charge with an option to
+                            make a small donation at the end. We regularly support joint events with organisations such
                             Fingal County Council, local schools, tidy town groups and other societies, giving talks or
                             walks.
                         </p>
                         <div className="card-actions justify-center">
                             <a href={`/events`} target="_blank"
-                               className="btn btn-neutral">Events</a>
+                               className="btn btn-neutral w-full">Events
+                                <ArrowTopRightOnSquareIcon className="size-4"/>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
-
 
         </div>
     )
