@@ -1,16 +1,21 @@
 "use client";
 
 import {Disclosure, DisclosureButton, DisclosurePanel} from '@headlessui/react';
-import {Bars3Icon, XMarkIcon} from '@heroicons/react/24/outline';
+import {Bars3Icon, XMarkIcon, ArrowTopRightOnSquareIcon} from '@heroicons/react/24/outline';
 import React, {useState} from 'react';
 import Link from 'next/link';
 
 const initialNavigation = [
-    {name: 'Home', href: '/', current: true},
-    {name: 'Hides & Sites', href: '/hides', current: false},
-    {name: 'Birds', href: '/birds', current: false},
-    {name: 'Links & Downloads', href: '/links', current: false},
-    {name: 'Events', href: '/events', current: false},
+    {name: 'Home', href: '/', external: false, current: true},
+    {name: 'Hides & Sites', href: '/hides', external: false, current: false},
+    {name: 'Birds', href: '/birds', external: false, current: false},
+    {name: 'Links & Downloads', href: '/links', external: false, current: false},
+    {
+        name: 'Events',
+        href: 'https://docs.google.com/spreadsheets/d/12SfG8sqV5vCh1qfEGdM02i1AeBb2y26BADTigknyEBg/edit?gid=455322855#gid=455322855',
+        external: true,
+        current: false
+    },
 ];
 
 function classNames(...classes: string[]): string {
@@ -60,7 +65,7 @@ export default function Navbar() {
                         <div className="hidden sm:ml-6 sm:block my-auto">
                             <div className="flex space-x-4">
                                 {navigation.map((item) => (
-                                    <Link key={item.name} href={item.href}
+                                    <Link key={item.name} href={item.href} target={item.external ? "_blank" : ""}
 
                                           aria-current={item.current ? 'page' : undefined}
                                           className={classNames(
@@ -69,7 +74,10 @@ export default function Navbar() {
                                           )}
                                           onClick={() => handleClick(item.name)}
                                     >
-                                        {item.name}
+                                        {item.external ?
+                                            <div className="flex">{item.name} <ArrowTopRightOnSquareIcon
+                                                className="size-4 my-auto ms-1"/></div> :
+                                            <div>{item.name}</div>}
                                     </Link>
                                 ))}
                             </div>
