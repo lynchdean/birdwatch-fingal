@@ -25,11 +25,17 @@ function classNames(...classes: string[]): string {
 export default function Navbar() {
     const [navigation, setNavigation] = useState(initialNavigation);
 
-    const handleClick = (name: string) => {
-        setNavigation(navigation.map(item => ({
-            ...item,
-            current: item.name === name,
-        })));
+    const handleClick = (name: string, external: boolean) => {
+        if (!external) {
+            setNavigation(navigation.map(item => ({
+                ...item,
+                current: item.name === name,
+            })));
+        }
+        // setNavigation(navigation.map(item => ({
+        //     ...item,
+        //     current: item.name === name,
+        // })));
     };
 
     return (
@@ -72,7 +78,7 @@ export default function Navbar() {
                                               item.current ? 'bg-base-300 text-base' : 'text-base hover:bg-neutral-500 hover:text-white',
                                               'rounded-md px-3 py-2 text-md font-medium',
                                           )}
-                                          onClick={() => handleClick(item.name)}
+                                          onClick={() => handleClick(item.name, item.external)}
                                     >
                                         {item.external ?
                                             <div className="flex">{item.name} <ArrowTopRightOnSquareIcon
@@ -98,7 +104,7 @@ export default function Navbar() {
                                 item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
                                 'block rounded-md px-3 py-2 text-base font-medium',
                             )}
-                            onClick={() => handleClick(item.name)}
+                            onClick={() => handleClick(item.name, item.external)}
                         >
                             {item.name}
                         </DisclosureButton>
