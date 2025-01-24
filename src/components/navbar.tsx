@@ -1,48 +1,102 @@
-import React from "react";
+"use client";
 
-export function Navbar() {
+import {Disclosure, DisclosureButton, DisclosurePanel} from '@headlessui/react';
+import {Bars3Icon, XMarkIcon} from '@heroicons/react/24/outline';
+import React, {useState} from 'react';
+import Link from 'next/link';
+
+const initialNavigation = [
+    {name: 'Home', href: '/', current: true},
+    {name: 'Hides & Sites', href: '/hides', current: false},
+    {name: 'Birds', href: '/birds', current: false},
+    {name: 'Links & Downloads', href: '/links', current: false},
+    {name: 'Events', href: '/events', current: false},
+];
+
+function classNames(...classes: string[]): string {
+    return classes.filter(Boolean).join(' ');
+}
+
+export default function Navbar() {
+    const [navigation, setNavigation] = useState(initialNavigation);
+
+    const handleClick = (name: string) => {
+        setNavigation(navigation.map(item => ({
+            ...item,
+            current: item.name === name,
+        })));
+    };
+
     return (
-        <div className="navbar bg-base-100">
-            <div className="flex-1">
-                <figure className="dark:hidden block">
-                    <img
-                        src="images/bwif-text-dark.png"
-                        alt="BWI Fingal Logo"
-                        className="h-12 mx-4 my-2"
-                    />
-                </figure>
-                <figure className="hidden dark:block">
-                    <img
-                        src="images/bwif-text.png"
-                        alt="BWI Fingal Logo"
-                        className="h-12 mx-4 my-2"
-                    />
-                </figure>
-            </div>
-            <div className="flex flex-1 justify-end px-2">
-                <div className="flex items-stretch">
-                    <a className="btn btn-ghost rounded-btn" href={`/`}>Home</a>
-                    <a className="btn btn-ghost rounded-btn" href={`/hides`}>Rogerstown Hides</a>
-                    <a className="btn btn-ghost rounded-btn" href={`/birds`}>Birds</a>
-                    <div className="dropdown dropdown-end">
-                        <div tabIndex={0} role="button" className="btn btn-ghost">More</div>
-                        <ul
-                            tabIndex={0}
-                            className="menu dropdown-content rounded-b-lg bg-base-100 z-[1] mt-4 w-52 p-2 shadow">
-                            <li><a className="btn btn-ghost rounded-btn" href={`/sites`}>Sites</a></li>
-                            <li><a className="btn btn-ghost rounded-btn" href={`/links`}>Links</a></li>
-                            <li><a className="btn btn-ghost rounded-btn" href={`/downloads`}>Downloads</a></li>
-                            <li><a className="btn btn-ghost rounded-btn" href={`/events`}>Events
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                     strokeWidth={1.5} stroke="currentColor" className="size-4">
-                                    <path strokeLinecap="round" strokeLinejoin="round"
-                                          d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/>
-                                </svg>
-                            </a></li>
-                        </ul>
+        <Disclosure as="nav" className="bg-base-100 py-2">
+            <div className="mx-auto max-w-7xl px- sm:px-6 lg:px-8">
+                <div className="relative flex h-16 items-center justify-between">
+                    <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
+                        <DisclosureButton
+                            className="group relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset">
+                            <span className="absolute -inset-0.5"/>
+                            <span className="sr-only">Open main menu</span>
+                            <Bars3Icon aria-hidden="true" className="block size-6 group-data-open:hidden"/>
+                            <XMarkIcon aria-hidden="true" className="hidden size-6 group-data-open:block"/>
+                        </DisclosureButton>
+                    </div>
+                    <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+                        <div className="flex shrink-0 items-center">
+                            <figure className="dark:hidden block">
+                                <img
+                                    src="images/bwif-text-dark.png"
+                                    alt="BWI Fingal Logo"
+                                    className="h-12 me-4 my-2"
+                                />
+                            </figure>
+                            <figure className="hidden dark:block">
+                                <img
+                                    src="images/bwif-text.png"
+                                    alt="BWI Fingal Logo"
+                                    className="h-12 me-4 my-2"
+                                />
+                            </figure>
+                        </div>
+                        <div className="hidden sm:ml-6 sm:block my-auto">
+                            <div className="flex space-x-4">
+                                {navigation.map((item) => (
+                                    <Link key={item.name} href={item.href}
+
+                                          aria-current={item.current ? 'page' : undefined}
+                                          className={classNames(
+                                              item.current ? 'bg-base-300 text-base' : 'text-base hover:bg-neutral-500 hover:text-white',
+                                              'rounded-md px-3 py-2 text-md font-medium',
+                                          )}
+                                          onClick={() => handleClick(item.name)}
+                                    >
+                                        {item.name}
+                                    </Link>
+                                ))}
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    )
+
+            <DisclosurePanel className="sm:hidden">
+                <div className="space-y-1 px-2 pt-2 pb-3">
+                    {navigation.map((item) => (
+                        <DisclosureButton
+                            key={item.name}
+                            as="a"
+                            href={item.href}
+                            aria-current={item.current ? 'page' : undefined}
+                            className={classNames(
+                                item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+                                'block rounded-md px-3 py-2 text-base font-medium',
+                            )}
+                            onClick={() => handleClick(item.name)}
+                        >
+                            {item.name}
+                        </DisclosureButton>
+                    ))}
+                </div>
+            </DisclosurePanel>
+        </Disclosure>
+    );
 }
