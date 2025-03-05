@@ -37,7 +37,7 @@ export default function Hides() {
                 </div>
             </div>
 
-            <div className="join join-vertical col-span-3 rounded-2xl bg-base-100 shadow-xl w-full">
+            <div className="join join-vertical rounded-2xl bg-base-100 shadow-xl">
                 {AccordionContent.map((item, index) => (
                     <div key={index} className="collapse collapse-arrow join-item border-base-300 border p-4">
                         <input type="radio" name="my-accordion-4" defaultChecked={index === 0}/>
@@ -51,7 +51,7 @@ export default function Hides() {
             </div>
 
 
-            <div className="card col-span-3 bg-base-100 shadow-xl">
+            <div className="card bg-base-100 shadow-xl">
                 <div className="card-body">
                     <h2 className="card-title">Other Sites</h2>
                     <ul className="list-disc ms-5">

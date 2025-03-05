@@ -6,9 +6,9 @@ import React, {useState} from 'react';
 import Link from 'next/link';
 
 const initialNavigation = [
-    {name: 'Home', href: '/', external: false, current: true},
+    {name: 'Home', href: '/', external: false, current: false},
     {name: 'Hides & Sites', href: '/hides', external: false, current: false},
-    {name: 'Birds', href: '/birds', external: false, current: false},
+    {name: 'Little Terns', href: '/terns', external: false, current: false},
     {name: 'Links & Downloads', href: '/links', external: false, current: false},
     {
         name: 'Events',
@@ -32,10 +32,6 @@ export default function Navbar() {
                 current: item.name === name,
             })));
         }
-        // setNavigation(navigation.map(item => ({
-        //     ...item,
-        //     current: item.name === name,
-        // })));
     };
 
     return (
