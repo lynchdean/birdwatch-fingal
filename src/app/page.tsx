@@ -194,7 +194,8 @@ export default function Home() {
                             walks.
                         </p>
                         <div className="card-actions justify-center">
-                            <a href={`/events`} target="_blank"
+                            <a href="https://docs.google.com/spreadsheets/d/12SfG8sqV5vCh1qfEGdM02i1AeBb2y26BADTigknyEBg/edit?gid=455322855#gid=455322855"
+                               target="_blank"
                                className="btn btn-neutral w-full">Events
                                 <ArrowTopRightOnSquareIcon className="size-4"/>
                             </a>
