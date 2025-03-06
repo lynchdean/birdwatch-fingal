@@ -25,7 +25,7 @@ export default function Home() {
                             about
                             the conservation of wild birds and their habitat in the Fingal area. The Branch formed in
                             1985
-                            when Rogerstown estuary came under treat of the development of a large landfill site.
+                            when Rogerstown estuary came under threat of the development of a large landfill site.
 
                             <br/><br/>
                             We maintain two hides at Rogerstown estuary. See our <a className="link" href={`/hides`}>
