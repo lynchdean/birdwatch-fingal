@@ -53,8 +53,8 @@ export default function Home() {
                             Due to its location on the east coast there is a good variety of coastal habitat to be found
                             including beaches, cliffs, islands and estuaries as well as agricultural land, woodland
                             etc..
-                            Rockabill Island off the coast from Skerries holds one of Europe's largest breeding colonies
-                            of
+                            Rockabill Island off the coast from Skerries holds one of Europe&apos;s largest breeding
+                            colonies of
                             Roseate Terns while during the winter months Rogerstown Estuary holds internationally
                             important
                             numbers of Pale-bellied Brent Geese, along with a further 10 species of wintering waterfowl
@@ -82,7 +82,7 @@ export default function Home() {
                     <div className="card-body">
                         <h2 className="card-title">I-Webs</h2>
                         <p>
-                            Ireland Wetland Bird Survey (I-Webs) counts of Rogerstown Estuary The birds of Fingal's
+                            Ireland Wetland Bird Survey (I-Webs) counts of Rogerstown Estuary The birds of Fingal&apos;s
                             estuaries
                             and coast line are counted once a month between September and March as part of I-WeBS. The
                             counts
@@ -165,7 +165,8 @@ export default function Home() {
                             We rely on the support of the public to finance our activities, such as the maintenance of
                             the hides at Rogerstown and running the Little Tern and Lapwing projects.
                             <br/><br/>
-                            Every donation, however large or small, is important to us and helps us to protect Fingal's
+                            Every donation, however large or small, is important to us and helps us to protect
+                            Fingal&apos;s
                             birds and biodiversity and in particular our work with Little Terns at Portrane and our
                             hides at Rogerstown. Thank you for your support.
                         </p>
