@@ -48,15 +48,8 @@ export default function Birds() {
                 </div>
             </div>
 
-            <div className="card lg:col-span-2 bg-base-100 shadow-xl">
-                <div className="card-body">
-                    {TernContent.section2.map((section, index) => (
-                        <p className="pb-2" key={index}>{section}</p>
-                    ))}
-                </div>
-            </div>
 
-            <div className="card bg-base-100 self-start shadow-xl">
+            <div className="card lg:col-span-3 bg-base-100 self-start shadow-xl">
                 <div className="card-body">
                     <div className="carousel">
                         {[...Array(6)].map((_, index) => (
@@ -71,6 +64,13 @@ export default function Birds() {
                             <a href={`#item${index + 1}`} className="btn btn-xs" key={index}>{index + 1}</a>
                         ))}
                     </div>
+                </div>
+            </div>
+            <div className="card lg:col-span-3 bg-base-100 shadow-xl">
+                <div className="card-body">
+                    {TernContent.section2.map((section, index) => (
+                        <p className="pb-2" key={index}>{section}</p>
+                    ))}
                 </div>
             </div>
         </div>
