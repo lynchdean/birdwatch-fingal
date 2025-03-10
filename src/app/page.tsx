@@ -6,7 +6,7 @@ export default function Home() {
     return (
         <div>
             <div className="bg-cover bg-center py-16 flex items-center justify-start ">
-                <Image src="/images/bwif-logo-t.png"
+                <Image src="/images/bwif-logo-border.png"
                        alt="BWI Fingal Logo"
                        width={200} height={200}
                        className="my-auto"

@@ -19,6 +19,7 @@ export const metadata: Metadata = {
     description: "BWI Fingal Branch",
 };
 
+
 export default function RootLayout({
                                        children,
                                    }: Readonly<{
@@ -26,11 +27,9 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-        <body className={`${geistSans.variable} ${geistMono.variable} antialiased bg-base-300`}>
+        <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <Navbar/>
         <div className="bg-cover bg-center mb-6 pt-0">
-            {/*<div className="bg-cover mb-6 pt-0"*/}
-            {/*     style={{backgroundImage: "url('/images/031A3934-Edit.png')"}}>*/}
             <div className="container mx-auto px-4 min-h-screen">
                 {children}
             </div>
