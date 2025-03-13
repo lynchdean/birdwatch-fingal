@@ -18,12 +18,18 @@ const links = [
 ]
 
 const downloads = [
-    {name: "Ballast Pit wild bird and biodiversity survey June 2022", path: ""},
-    {name: "Mill Stream wild bird and biodiversity survey", path: ""},
-    {name: "Kenure Woods Bird Survey 2021", path: ""},
-    {name: "Red Island-South Strand wild bird and biodiversity survey", path: ""},
-    {name: "Rivervalley Park Survey May 2020", path: ""},
-    {name: "St Catherine Bird Survey 2021.pdf", path: ""},
+    {
+        name: "Ballast Pit wild bird and biodiversity survey June 2022",
+        path: "Ballast Pit wild bird and biodiversity survey June 2022.pdf"
+    },
+    {name: "Mill Stream wild bird and biodiversity survey", path: "Mill Stream wild bird and biodiversity survey.pdf"},
+    {name: "Kenure Woods Bird Survey 2021", path: "Kenure Woods Bird Survey 2021.pdf"},
+    {
+        name: "Red Island-South Strand wild bird and biodiversity survey",
+        path: "Red Island-South Strand wild bird and biodiversity survey.pdf"
+    },
+    {name: "Rivervalley Park Survey May 2020", path: "Rivervalley Park Survey May 2020.pdf"},
+    {name: "St Catherine Bird Survey 2021.pdf", path: "St Catherine Bird Survey 2021.pdf"},
 ]
 
 export default function Downloads() {
