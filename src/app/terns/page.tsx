@@ -13,10 +13,10 @@ export default function Birds() {
                     <a href="files/Little-Tern-2024-Portrane.pdf"
                        target="_blank"
                        className="btn btn-neutral w-full">
-                        2024 Colony News
+                        Colony News
                         <ArrowTopRightOnSquareIcon className="size-4"/>
                     </a>
-                    <a href="https://docs.google.com/spreadsheets/d/1A2BNZEkcOCirsFyDVrNU3NI3UqSrj5p8zziyeGpy3qg"
+                    <a href="https://docs.google.com/spreadsheets/d/1Mf8cWO4WS6nk1uEZAMfzYMB2hJZW4Llxs0Nn6IGqvmo/edit?usp=sharing"
                        target="_blank"
                        className="btn btn-neutral w-full">
                         View Little Tern Warden Roster
