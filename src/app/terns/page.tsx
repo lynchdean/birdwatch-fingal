@@ -10,13 +10,13 @@ export default function Birds() {
             <div className="card bg-base-100 shadow-xl">
                 <div className="card-body">
                     <h2 className="card-title">Little Terns</h2>
-                    <a href="files/Little-Tern-2024-Portrane.pdf"
+                    <a href="https://docs.google.com/spreadsheets/d/1Mf8cWO4WS6nk1uEZAMfzYMB2hJZW4Llxs0Nn6IGqvmo/edit?usp=sharing"
                        target="_blank"
                        className="btn btn-neutral w-full">
                         Colony News
                         <ArrowTopRightOnSquareIcon className="size-4"/>
                     </a>
-                    <a href="https://docs.google.com/spreadsheets/d/1Mf8cWO4WS6nk1uEZAMfzYMB2hJZW4Llxs0Nn6IGqvmo/edit?usp=sharing"
+                    <a href="https://docs.google.com/spreadsheets/d/1A2BNZEkcOCirsFyDVrNU3NI3UqSrj5p8zziyeGpy3qg"
                        target="_blank"
                        className="btn btn-neutral w-full">
                         View Little Tern Warden Roster
