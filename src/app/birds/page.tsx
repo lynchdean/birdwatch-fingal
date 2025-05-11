@@ -1,10 +1,15 @@
-import { Metadata } from 'next';
+'use client';
 
-export const metadata: Metadata = {
-  title: 'Redirecting to Terns...',
-};
+import { useEffect } from 'react';
+import { useRouter } from 'next/navigation';
 
 export default function BirdsRedirect() {
+  const router = useRouter();
+
+  useEffect(() => {
+    router.replace('/terns');
+  }, [router]);
+
   return (
     <div className="flex items-center justify-center min-h-screen">
       <div className="text-center">
