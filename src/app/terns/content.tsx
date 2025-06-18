@@ -40,5 +40,11 @@ export const TernContent = {
         "2019 looked like it was going to be an even better year with 18 nests with eggs but unfortunately over the course of two nights a predator managed to clear out 17 of the nests. The one remaining pair raised 3 chicks, two of which were ringed (IX4 & IX5). In 2020 9 fledged and 8 were ringed (IV0-IV5, IV7-IV9). Sadly, IV9 was found dead on the beach in early August before it fledged and although IV3 & IV4 were seen many times after fledging their sibling IV2 was not and was presumed dead.",
         "Please report any sightings of the mentioned ringed birds to bwifingal@gmail.com.",
         "Note: All photographs taken under licence and are copyrighted."
+    ],
+    "section3": [
+        "In 2021, Covid-19 restrictions were eased sufficiently to allow the Portrane Little Tern Project to go ahead and 24 chicks fledged. It was a very successful year and brought the total number fledged since 2018 to 50.",
+        "2022 was looking to be another good year with over 30 chicks hatching. However, the adults led them to another part of the dunes where they were unprotected by fencing, and only 6 chicks fledged following predation by a fox.",
+        "In 2023, the 17 breeding pairs of Little Tern produced 35 eggs, of which 14 hatched and 13 fledged. The installation of a mesh boundary prevented the chicks from wandering outside the protected area.",
+        "2024 was our most successful year by far, with 31 breeding pairs of Little Tern producing 80 eggs, of which 68 hatched and at least 53 fledged."
     ]
 }

@@ -73,6 +73,23 @@ export default function Birds() {
                     ))}
                 </div>
             </div>
+
+            <div className="card lg:col-span-3 bg-base-100 shadow-xl">
+                <div className="card-body">
+                    {TernContent.section2.map((section, index) => (
+                        <p className="pb-2" key={index}>{section}</p>
+                    ))}
+                </div>
+            </div>
+            {/* Add this block below the section2 card */}
+            <div className="card lg:col-span-3 bg-base-100 shadow-xl">
+                <div className="card-body">
+                    <h3 className="card-title">Portrane Little Tern Project Updates</h3>
+                    {TernContent.section3.map((update, index) => (
+                        <p className="pb-2" key={index}>{update}</p>
+                    ))}
+                </div>
+            </div>
         </div>
     )
 }
