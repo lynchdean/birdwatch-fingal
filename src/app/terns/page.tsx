@@ -74,13 +74,6 @@ export default function Birds() {
                 </div>
             </div>
 
-            <div className="card lg:col-span-3 bg-base-100 shadow-xl">
-                <div className="card-body">
-                    {TernContent.section2.map((section, index) => (
-                        <p className="pb-2" key={index}>{section}</p>
-                    ))}
-                </div>
-            </div>
             {/* Add this block below the section2 card */}
             <div className="card lg:col-span-3 bg-base-100 shadow-xl">
                 <div className="card-body">
