@@ -45,6 +45,7 @@ export const TernContent = {
         "In 2021, Covid-19 restrictions were eased sufficiently to allow the Portrane Little Tern Project to go ahead and 24 chicks fledged. It was a very successful year and brought the total number fledged since 2018 to 50.",
         "2022 was looking to be another good year with over 30 chicks hatching. However, the adults led them to another part of the dunes where they were unprotected by fencing, and only 6 chicks fledged following predation by a fox.",
         "In 2023, the 17 breeding pairs of Little Tern produced 35 eggs, of which 14 hatched and 13 fledged. The installation of a mesh boundary prevented the chicks from wandering outside the protected area.",
-        "2024 was our most successful year by far, with 31 breeding pairs of Little Tern producing 80 eggs, of which 68 hatched and at least 53 fledged."
+        "2024 was our most successful year by far, with 31 breeding pairs of Little Tern producing 80 eggs, of which 68 hatched and at least 53 fledged.",
+        "In 2025 we added a minimum of 41 little terns to our fledgling list, making it the second best year for chicks fledged. Unfortunately we lost 53 eggs and chicks to predation and tide making it the worst year for losses."
     ]
 }

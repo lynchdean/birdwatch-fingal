@@ -2,7 +2,7 @@ import React from "react";
 import {TernContent} from "@/app/terns/content";
 import {ArrowTopRightOnSquareIcon} from "@heroicons/react/24/solid";
 
-const pdfYears = [2024, 2023, 2022, 2021, 2020, 2018];
+const pdfYears = [2025, 2024, 2023, 2022, 2021, 2020, 2018];
 
 export default function Birds() {
     return (
