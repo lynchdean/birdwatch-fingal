@@ -202,6 +202,28 @@ export default function Home() {
                         </div>
                     </div>
                 </div>
+
+                {/* Ireland AM Interview */}
+                <div className="card bg-base-100 shadow-xl">
+                    <figure>
+                        <img src="images/iam-interview.jpeg"
+                             alt="Ireland AM Interview"
+                        />
+                    </figure>
+                    <div className="card-body">
+                        <h2 className="card-title">Ireland AM Interview</h2>
+                        <p className="">
+                            Virgin Media News broadcast from Rogerstown estuary.
+                        </p>
+                        <div className="card-actions justify-center">
+                            <a href="https://youtu.be/1cFYitcmqVs"
+                               target="_blank"
+                               className="btn btn-neutral w-full">Watch Interview
+                                <ArrowTopRightOnSquareIcon className="size-4"/>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
