@@ -170,12 +170,12 @@ export default function Home() {
                             birds and biodiversity and in particular our work with Little Terns at Portrane and our
                             hides at Rogerstown. Thank you for your support.
                         </p>
-                        <div className="card-actions justify-center">
+//                         <div className="card-actions justify-center">
 //                             <a href="https://buy.stripe.com/eVa5nm22EbA78FyfYY" target="_blank"
 //                                className="btn btn-neutral w-full">Donate
 //                                 <ArrowTopRightOnSquareIcon className="size-4"/>
 //                             </a>
-                        </div>
+//                         </div>
                     </div>
                 </div>
 
